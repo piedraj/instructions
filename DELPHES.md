@@ -40,7 +40,7 @@ jobs se lancen. Es necesario modificar el archivo `submit_template_gridui.sh` a 
     cp -r /gpfs/projects/cms/parbol/code /gpfs/projects/cms/piedra/.
 
 
-Replace *parbol* by your USER and directories.
+Replace **parbol** by your USER and directories.
 
     cd /gpfs/projects/cms/piedra/code/madanalysis5/tools/delphes
 
