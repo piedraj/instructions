@@ -1,6 +1,6 @@
-# Instructions
+# Pablo's instructions
 
-En [1] hay una versión de Delphes modificada para:
+En `/gpfs/projects/cms/parbol/code` hay una versión de Delphes modificada para:
 
    * meter la información del timing;
    * hacer tratamiento de partículas long-lived;
@@ -10,21 +10,17 @@ En [1] hay una versión de Delphes modificada para:
    * capacidad de correr Delphes fragmentando el número de archivos;
    * macro para correr en gridui "a la crab" las muestras de Delphes.
 
-La macro se llama make_gridui.py. Crea todas las estructuras de directorios y
-mete todo lo necesario en un "run.sh" para que sólo haya que ejecutarlo y los
-jobs se lancen. Es necesario modificar el archivo submit_template_gridui.sh a
-los directorios de cada uno. Para ejecutar make_gridui.py,
+La macro se llama `make_gridui.py`. Crea todas las estructuras de directorios y mete todo lo necesario en un `run.sh` para que sólo haya que ejecutarlo y los
+jobs se lancen. Es necesario modificar el archivo `submit_template_gridui.sh` a los directorios de cada uno.
 
     python make_gridui.py <directory> <eventsperjob> <output>
 
-      directory = directorio donde se encuentra la muestra
-   eventsPerJob = numero de sucesos por job
-      outputdir = directorio donde se guarda el resultado
-
-[1] /gpfs/projects/cms/parbol/code
+       directory = directorio donde se encuentra la muestra
+    eventsPerJob = numero de sucesos por job
+       outputdir = directorio donde se guarda el resultado
 
 
-# Prepare a CMSSW release
+# Setup a CMSSW release
 
     ssh gridui.ifca.es
 
@@ -37,14 +33,14 @@ los directorios de cada uno. Para ejecutar make_gridui.py,
     cmsenv
 
 
-# Get the code and prepare it
+# Get Pablo's code and prepare it
 
     ssh gridui.ifca.es
 
     cp -r /gpfs/projects/cms/parbol/code /gpfs/projects/cms/piedra/.
 
 
-Replace parbol by your USER and directories.
+Replace *parbol* by your USER and directories.
 
     cd /gpfs/projects/cms/piedra/code/madanalysis5/tools/delphes
 
@@ -81,6 +77,6 @@ Once the single file test has been successful, you can then submit all the files
     source run.sh
 
 
-# Is everything all right?
+# Check your jobs
 
     qstat -u piedra
