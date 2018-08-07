@@ -31,11 +31,6 @@ Add these lines in the **HLTDebugFEVT** block of `HLTrigger/Configuration/python
     'keep *_hltIter2IterL3MuonMerged_*_*',
     'keep *_hltIter2IterL3FromL1MuonMerged_*_*',
 
-Edit/copy the following files.
-
-    #cp ~calderon/public/for_Cedric/associators_cff.py       Validation/RecoMuon/python/.
-    #cp ~calderon/public/for_Cedric/muonValidationHLT_cff.py Validation/RecoMuon/python/.
-
 
 # GEN-SIM
 
@@ -154,10 +149,17 @@ Create the harvesting configuration file.
               --no_exec \
               --io HARVESTFull_2018.io \
               --python HARVESTFull_2018.py \
-              --filein file:step3_inDQM.root \
-              --fileout file:step4.root
+              --filein file:step3_inDQM.root
 
 Run the harvesting configuration file.
 
     cmsRun HARVESTFull_2018.py
+
+
+# Validation
+
+    cd CMSSW_10_2_0/src
+
+    cp ~calderon/public/for_Cedric/associators_cff.py       Validation/RecoMuon/python/.
+    cp ~calderon/public/for_Cedric/muonValidationHLT_cff.py Validation/RecoMuon/python/.
 
