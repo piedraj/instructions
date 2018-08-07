@@ -31,8 +31,8 @@ Add these lines in `HLTrigger/Configuration/python/HLTrigger_EventContent_cff.py
 
 Edit/copy the following files.
 
-    #cp ~calderon/public/for_Cedric/associators_cff.py             Validation/RecoMuon/python/.
-    #cp ~calderon/public/for_Cedric/muonValidationHLT_cff.py       Validation/RecoMuon/python/.
+    #cp ~calderon/public/for_Cedric/associators_cff.py       Validation/RecoMuon/python/.
+    #cp ~calderon/public/for_Cedric/muonValidationHLT_cff.py Validation/RecoMuon/python/.
 
 
 # Test
@@ -42,34 +42,55 @@ Edit/copy the following files.
     mkdir RelVal
     cd RelVal
 
+Create the GEN-SIM configuration file using [https://twiki.cern.ch/twiki/bin/view/CMSPublic/SWGuideCmsDriver](cmsDriver.py).
+
     cmsDriver.py SingleMuPt100_pythia8_cfi \
- 	      --conditions auto:phase1_2018_realistic -n 10 \
-	      --era Run2_2018 \
-	      --eventcontent FEVTDEBUG \
-	      --relval 9000,100 -s GEN,SIM \
+ 	      --conditions auto:phase1_2018_realistic \
+              --step GEN,SIM \
 	      --datatier GEN-SIM \
-	      --beamspot Realistic25ns13TeVEarly2018Collision \
+              --number 10 \
+	      --era Run2_2018 \
 	      --geometry DB:Extended \
+	      --eventcontent FEVTDEBUG \
+	      --no_exec \
+              --nThreads 8 \
 	      --io SingleMuPt100_pythia8_2018_GenSimFull.io \
 	      --python SingleMuPt100_pythia8_2018_GenSimFull.py \
-	      --no_exec \
 	      --fileout file:step1.root \
-	      --nThreads 8
+	      --beamspot Realistic25ns13TeVEarly2018Collision \
+	      --relval 9000,100
+
+Produce 10 GEN-SIM events.
 
     cmsRun SingleMuPt100_pythia8_2018_GenSimFull.py
 
-    cp ~calderon/public/for_Cedric/step3.py .
+Create the GEN-SIM-DIGI-RAW configuration file.
 
-    emacs -nw step3.py
+    cmsDriver.py step2 \
+              --conditions auto:phase1_2018_realistic \
+              --step DIGI:pdigi_valid,L1,DIGI2RAW,HLT:@relval2018 \
+              --datatier GEN-SIM-DIGI-RAW \
+              --number 10 \
+              --era Run2_2018 \
+              --geometry DB:Extended \
+              --eventcontent FEVTDEBUGHLT \
+              --no_exec \
+              --nThreads 8 \
+              --io DigiFull_2018.io \
+              --python DigiFull_2018.py \
+              --filein file:step1.root \
+              --fileout file:step2.root
 
-    cmsRun step3.py
+Produce 10 GEN-SIM-DIGI-RAW events.
+
+    cmsRun DigiFull_2018.py
 
 
 # Check the results
 
     edmDumpEventContent step2.root > step2_edmDumpEventContent.out
 
-These collections are in Santi's list [1]. They ARE NOT in the event dump.
+These collections are in [Santiago's list](https://its.cern.ch/jira/browse/CMSMUONS-169), and **they are** in the event dump.
 
     cat step2_edmDumpEventContent.out | grep hltIterL3GlbMuon
     cat step2_edmDumpEventContent.out | grep hltIterL3MuonsNoID
@@ -78,10 +99,8 @@ These collections are in Santi's list [1]. They ARE NOT in the event dump.
     cat step2_edmDumpEventContent.out | grep hltIterL3MuonMerged
     cat step2_edmDumpEventContent.out | grep hltIterL3MuonAndMuonFromL1Merged
 
-These collections are only in Cedric's list [1]. They ARE in the event dump.
+These collections are not in [Santiago's list](https://its.cern.ch/jira/browse/CMSMUONS-169), but **they are** in the event dump.
 
     cat step2_edmDumpEventContent.out | grep hltIter2IterL3MuonMerged
     cat step2_edmDumpEventContent.out | grep hltIter2IterL3FromL1MuonMerged
-
-[1] https://its.cern.ch/jira/browse/CMSMUONS-169
 
