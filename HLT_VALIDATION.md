@@ -28,8 +28,6 @@ Add these lines in the **HLTDebugFEVT** block of `HLTrigger/Configuration/python
     'keep *_hltIterL3OIMuonTrackSelectionHighPurity_*_*',
     'keep *_hltIterL3MuonMerged_*_*',
     'keep *_hltIterL3MuonAndMuonFromL1Merged_*_*',
-    'keep *_hltIter2IterL3MuonMerged_*_*',
-    'keep *_hltIter2IterL3FromL1MuonMerged_*_*',
 
 
 # GEN-SIM
@@ -99,11 +97,6 @@ These collections are in [Santiago's list](https://its.cern.ch/jira/browse/CMSMU
     cat step2_edmDumpEventContent.out | grep hltIterL3MuonMerged
     cat step2_edmDumpEventContent.out | grep hltIterL3MuonAndMuonFromL1Merged
 
-These collections are not in [Santiago's list](https://its.cern.ch/jira/browse/CMSMUONS-169), but **they are** in the event dump.
-
-    cat step2_edmDumpEventContent.out | grep hltIter2IterL3MuonMerged
-    cat step2_edmDumpEventContent.out | grep hltIter2IterL3FromL1MuonMerged
-
 
 # DQMIO
 
@@ -163,6 +156,6 @@ Run the harvesting configuration file.
     mv associators_cff.py       associators_cff.py.default
     mv muonValidationHLT_cff.py muonValidationHLT_cff.py.default
 
-    cp ~calderon/public/for_Cedric/associators_cff.py       .
+    cp ~calderon/public/for_Cedric/associators_cff.py .
     cp ~calderon/public/for_Cedric/muonValidationHLT_cff.py .
 
