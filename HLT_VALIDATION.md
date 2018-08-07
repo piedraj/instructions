@@ -158,11 +158,11 @@ Run the harvesting configuration file.
 
 # Validation
 
-    cd CMSSW_10_2_0/src
+    cd CMSSW_10_2_0/src/Validation/RecoMuon/python
 
-    mv Validation/RecoMuon/python/associators_cff.py       Validation/RecoMuon/python/associators_cff.py.default
-    mv Validation/RecoMuon/python/muonValidationHLT_cff.py Validation/RecoMuon/python/muonValidationHLT_cff.py.default
+    mv associators_cff.py       associators_cff.py.default
+    mv muonValidationHLT_cff.py muonValidationHLT_cff.py.default
 
-    cp ~calderon/public/for_Cedric/associators_cff.py       Validation/RecoMuon/python/.
-    cp ~calderon/public/for_Cedric/muonValidationHLT_cff.py Validation/RecoMuon/python/.
+    cp ~calderon/public/for_Cedric/associators_cff.py       .
+    cp ~calderon/public/for_Cedric/muonValidationHLT_cff.py .
 
