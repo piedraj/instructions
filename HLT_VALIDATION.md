@@ -42,7 +42,7 @@ Edit/copy the following files.
     mkdir RelVal
     cd RelVal
 
-Create the GEN-SIM configuration file using [https://twiki.cern.ch/twiki/bin/view/CMSPublic/SWGuideCmsDriver](cmsDriver.py).
+Create the GEN-SIM configuration file using [cmsDriver.py](https://twiki.cern.ch/twiki/bin/view/CMSPublic/SWGuideCmsDriver).
 
     cmsDriver.py SingleMuPt100_pythia8_cfi \
               --conditions auto:phase1_2018_realistic \
