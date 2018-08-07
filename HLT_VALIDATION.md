@@ -58,7 +58,7 @@ Create the GEN-SIM configuration file using [cmsDriver.py](https://twiki.cern.ch
               --nThreads 8 \
               --io SingleMuPt100_pythia8_2018_GenSimFull.io \
               --python SingleMuPt100_pythia8_2018_GenSimFull.py \
-              --fileout file:step1.root \
+              --fileout file:step1.root
 
 Run the GEN-SIM configuration file.
 
@@ -117,7 +117,7 @@ Create the DQMIO configuration file.
     cd RelVal
 
     cmsDriver.py step3 \
-	      --runUnscheduled \
+              --runUnscheduled \
               --mc \
               --conditions auto:phase1_2018_realistic \
               --step RAW2DIGI,L1Reco,RECO,RECOSIM,EI,PAT,VALIDATION:@standardValidation+@miniAODValidation,DQM:@standardDQM+@ExtraHLT+@miniAODDQM \
@@ -157,7 +157,7 @@ Create the harvesting configuration file.
               --filein file:step3_inDQM.root \
               --fileout file:step4.root
 
-Run the harvesrting configuration file.
+Run the harvesting configuration file.
 
     cmsRun HARVESTFull_2018.py
 
