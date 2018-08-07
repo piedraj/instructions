@@ -45,20 +45,20 @@ Edit/copy the following files.
 Create the GEN-SIM configuration file using [https://twiki.cern.ch/twiki/bin/view/CMSPublic/SWGuideCmsDriver](cmsDriver.py).
 
     cmsDriver.py SingleMuPt100_pythia8_cfi \
- 	      --conditions auto:phase1_2018_realistic \
+              --conditions auto:phase1_2018_realistic \
               --step GEN,SIM \
-	      --datatier GEN-SIM \
+              --datatier GEN-SIM \
               --number 10 \
-	      --era Run2_2018 \
-	      --geometry DB:Extended \
-	      --eventcontent FEVTDEBUG \
-	      --no_exec \
+              --era Run2_2018 \
+              --geometry DB:Extended \
+              --eventcontent FEVTDEBUG \
+              --no_exec \
               --nThreads 8 \
-	      --io SingleMuPt100_pythia8_2018_GenSimFull.io \
-	      --python SingleMuPt100_pythia8_2018_GenSimFull.py \
-	      --fileout file:step1.root \
-	      --beamspot Realistic25ns13TeVEarly2018Collision \
-	      --relval 9000,100
+              --io SingleMuPt100_pythia8_2018_GenSimFull.io \
+              --python SingleMuPt100_pythia8_2018_GenSimFull.py \
+              --fileout file:step1.root \
+              --beamspot Realistic25ns13TeVEarly2018Collision \
+              --relval 9000,100
 
 Produce 10 GEN-SIM events.
 
