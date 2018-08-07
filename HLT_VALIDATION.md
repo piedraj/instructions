@@ -18,7 +18,7 @@
 
 # Edition
 
-Add these lines in _HLTrigger/Configuration/python/HLTrigger_EventContent_cff.py_.
+Add these lines in `HLTrigger/Configuration/python/HLTrigger_EventContent_cff.py`.
 
     'keep *_hltIterL3GlbMuon_*_*',
     'keep *_hltIterL3MuonsNoID_*_*',
