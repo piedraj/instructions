@@ -20,18 +20,19 @@
 
 Add these lines in HLTrigger/Configuration/python/HLTrigger_EventContent_cff.py
 
-        'keep *_hltIterL3GlbMuon_*_*',
-        'keep *_hltIterL3MuonsNoID_*_*',
-        'keep *_hltIterL3Muons_*_*',
-        'keep *_hltIterL3OIMuonTrackSelectionHighPurity_*_*',
-        'keep *_hltIterL3MuonMerged_*_*',
-        'keep *_hltIterL3MuonAndMuonFromL1Merged_*_*',
-        'keep *_hltIter2IterL3MuonMerged_*_*',
-        'keep *_hltIter2IterL3FromL1MuonMerged_*_*',
+    'keep *_hltIterL3GlbMuon_*_*',
+    'keep *_hltIterL3MuonsNoID_*_*',
+    'keep *_hltIterL3Muons_*_*',
+    'keep *_hltIterL3OIMuonTrackSelectionHighPurity_*_*',
+    'keep *_hltIterL3MuonMerged_*_*',
+    'keep *_hltIterL3MuonAndMuonFromL1Merged_*_*',
+    'keep *_hltIter2IterL3MuonMerged_*_*',
+    'keep *_hltIter2IterL3FromL1MuonMerged_*_*',
+
+Edit/copy the following files.
 
     #cp ~calderon/public/for_Cedric/associators_cff.py             Validation/RecoMuon/python/.
     #cp ~calderon/public/for_Cedric/muonValidationHLT_cff.py       Validation/RecoMuon/python/.
-    #cp ~calderon/public/for_Cedric/HLTrigger_EventContent_cff.py  HLTrigger/Configuration/python/.
 
 
 # Test
@@ -58,6 +59,8 @@ Add these lines in HLTrigger/Configuration/python/HLTrigger_EventContent_cff.py
     cmsRun SingleMuPt100_pythia8_2018_GenSimFull.py
 
     cp ~calderon/public/for_Cedric/step3.py .
+
+    emacs -nw step3.py
 
     cmsRun step3.py
 
