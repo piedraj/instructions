@@ -15,6 +15,8 @@
 
     scram b -j 8
 
+    mkdir RelVal
+
 
 # Edition
 
@@ -35,16 +37,16 @@ Edit/copy the following files.
     #cp ~calderon/public/for_Cedric/muonValidationHLT_cff.py Validation/RecoMuon/python/.
 
 
-# Test
-
-    scram b -j 8
-
-    mkdir RelVal
-    cd RelVal
+# GEN-SIM
 
 Create the GEN-SIM configuration file using [cmsDriver.py](https://twiki.cern.ch/twiki/bin/view/CMSPublic/SWGuideCmsDriver).
 
+    cd RelVal
+
     cmsDriver.py SingleMuPt100_pythia8_cfi \
+              --beamspot Realistic25ns13TeVEarly2018Collision \
+              --relval 9000,100 \
+              --mc \
               --conditions auto:phase1_2018_realistic \
               --step GEN,SIM \
               --datatier GEN-SIM \
@@ -57,16 +59,20 @@ Create the GEN-SIM configuration file using [cmsDriver.py](https://twiki.cern.ch
               --io SingleMuPt100_pythia8_2018_GenSimFull.io \
               --python SingleMuPt100_pythia8_2018_GenSimFull.py \
               --fileout file:step1.root \
-              --beamspot Realistic25ns13TeVEarly2018Collision \
-              --relval 9000,100
 
-Produce 10 GEN-SIM events.
+Run the GEN-SIM configuration file.
 
     cmsRun SingleMuPt100_pythia8_2018_GenSimFull.py
 
+
+# GEN-SIM-DIGI-RAW
+
 Create the GEN-SIM-DIGI-RAW configuration file.
 
+    cd RelVal
+
     cmsDriver.py step2 \
+              --mc \
               --conditions auto:phase1_2018_realistic \
               --step DIGI:pdigi_valid,L1,DIGI2RAW,HLT:@relval2018 \
               --datatier GEN-SIM-DIGI-RAW \
@@ -81,12 +87,11 @@ Create the GEN-SIM-DIGI-RAW configuration file.
               --filein file:step1.root \
               --fileout file:step2.root
 
-Produce 10 GEN-SIM-DIGI-RAW events.
+Run the GEN-SIM-DIGI-RAW configuration file.
 
     cmsRun DigiFull_2018.py
 
-
-# Check the results
+Check the results.
 
     edmDumpEventContent step2.root > step2_edmDumpEventContent.out
 
@@ -103,4 +108,56 @@ These collections are not in [Santiago's list](https://its.cern.ch/jira/browse/C
 
     cat step2_edmDumpEventContent.out | grep hltIter2IterL3MuonMerged
     cat step2_edmDumpEventContent.out | grep hltIter2IterL3FromL1MuonMerged
+
+
+# DQMIO
+
+Create the DQMIO configuration file.
+
+    cd RelVal
+
+    cmsDriver.py step3 \
+	      --runUnscheduled \
+              --mc \
+              --conditions auto:phase1_2018_realistic \
+              --step RAW2DIGI,L1Reco,RECO,RECOSIM,EI,PAT,VALIDATION:@standardValidation+@miniAODValidation,DQM:@standardDQM+@ExtraHLT+@miniAODDQM \
+              --datatier GEN-SIM-RECO,MINIAODSIM,DQMIO \
+              --number 10 \
+              --era Run2_2018 \
+              --geometry DB:Extended \
+              --eventcontent RECOSIM,MINIAODSIM,DQM \
+              --no_exec \
+              --nThreads 8 \
+              --io RecoFull_2018.io \
+              --python RecoFull_2018.py \
+              --filein file:step2.root \
+              --fileout file:step3.root
+
+Run the DQMIO configuration file.
+
+    cmsRun RecoFull_2018.py
+
+
+# Harvesting
+
+Create the harvesting configuration file.
+
+    cmsDriver.py step4 \
+              --filetype DQM \
+              --scenario pp \
+              --mc \
+              --conditions auto:phase1_2018_realistic \
+              --step HARVESTING:@standardValidation+@standardDQM+@ExtraHLT+@miniAODValidation+@miniAODDQM \
+              --number 100 \
+              --era Run2_2018 \
+              --geometry DB:Extended \
+              --no_exec \
+              --io HARVESTFull_2018.io \
+              --python HARVESTFull_2018.py \
+              --filein file:step3_inDQM.root \
+              --fileout file:step4.root
+
+Run the harvesrting configuration file.
+
+    cmsRun HARVESTFull_2018.py
 
