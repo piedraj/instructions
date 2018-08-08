@@ -21,7 +21,7 @@ Check your brilcalc version.
     brilcalc --version
     3.3.2
 
-Get the 2017 luminosity. Based on the [PdmV](https://twiki.cern.ch/twiki/bin/view/CMS/PdmV2017Analysis) and on the [TwikiLUM](https://twiki.cern.ch/twiki/bin/viewauth/CMS/TWikiLUM) TWikis one should use the following.
+Get the 2017 luminosity. Based on the [PdmV2017](https://twiki.cern.ch/twiki/bin/view/CMS/PdmV2017Analysis) and on the [TwikiLUM](https://twiki.cern.ch/twiki/bin/viewauth/CMS/TWikiLUM) TWikis one should use the following.
 
     brilcalc lumi -b "STABLE BEAMS" \
                   --normtag /cvmfs/cms-bril.cern.ch/cms-lumi-pog/Normtags/normtag_PHYSICS.json \
