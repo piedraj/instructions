@@ -2,22 +2,22 @@
 
 The Delphes modified version that can be found in `/gpfs/projects/cms/parbol/code` includes several improvements.
 
-   * meter la información del timing;
-   * hacer tratamiento de partículas long-lived;
-   * meter eficiencias en función de d0 y dz;
-   * parametrización realista para muones Tight en función de d0 y dz;
-   * capacidad de correr Delphes sobre GEN de CMS;
-   * capacidad de correr Delphes fragmentando el número de archivos;
-   * macro para correr en gridui "a la crab" las muestras de Delphes.
+   * timing information;
+   * long-lived particles treatment;
+   * muon efficiencies vs. d0 and dz;
+   * Tight muons realistic parameterization vs. d0 and dz;
+   * accepts CMS GEN as input;
+   * splits the number of jobs;
 
-La macro se llama `make_gridui.py`. Crea todas las estructuras de directorios y mete todo lo necesario en un `run.sh` para que sólo haya que ejecutarlo y los
-jobs se lancen. Es necesario modificar el archivo `submit_template_gridui.sh` a los directorios de cada uno.
+The main macro is called `make_gridui.py`. It creates the output structure and the `run.sh` script, which contains all that is needed to submit the jobs. We aware that every user needs to adapt the file `submit_template_gridui.sh` to his/her directories.
 
     python make_gridui.py <directory> <eventsperjob> <output>
 
-       directory = directorio donde se encuentra la muestra
-    eventsPerJob = numero de sucesos por job
-       outputdir = directorio donde se guarda el resultado
+       directory = location of the input sample
+    eventsPerJob = number of events per job
+       outputdir = output location
+
+Notice that `make_gridui.py` will look for the **PhaseIISummer17GenOnly/\<my-sample-name\>/GEN** path in the `directory` parameter, and it will prepare the output structure in `outputdir/<my-sample-name>`.
 
 
 # Setup a CMSSW release
@@ -84,7 +84,7 @@ Once the single file test has been successful, you can then submit all the files
 
 # Work in progress
 
-Remember that the macro `make_gridui.py` has three parameters: `directory`, `eventsPerJob` and `outputdir`. Notice that it will look for the **PhaseIISummer17GenOnly/\<my-sample-name\>/GEN** path in the `directory` parameter, and it will prepare the output location in `outputdir/<my-sample-name>`. Therefore we need to create a path in gridui, where we can copy there the private GEN files produced by Alicia.
+We need to create a path in gridui where we can copy the private GEN files produced by Alicia.
 
     ssh gridui.ifca.es
     mkdir -p /gpfs/gaes/cms/store/mc/PhaseIISummer17GenOnly/DisplacedSUSY_SmuonToMuNeutralino_M-200_CTau-2_14TeV_PhaseII/GEN
