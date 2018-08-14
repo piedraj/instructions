@@ -101,3 +101,9 @@ Now we can test Pablo's code with Alicia's private GEN production.
     ...
     python make_gridui.py /gpfs/gaes/cms/store/mc/PhaseIISummer17GenOnly/DisplacedSUSY_SmuonToMuNeutralino_M-200_CTau-2_14TeV_PhaseII/GEN 1000 /gpfs/projects/cms/piedra/code/madanalysis5/tools/delphes/test
 
+    qstat -u piedra
+
+    job-ID  prior   name       user         state submit/start at     queue                          slots ja-task-ID 
+    -----------------------------------------------------------------------------------------------------------------
+     135233 0.60165 DisplacedS piedra       qw    08/14/2018 15:35:16                                    1
+
