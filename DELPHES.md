@@ -84,7 +84,7 @@ Once the single file test has been successful, you can then submit all the files
 
 # Work in progress
 
-Remember that the macro `make_gridui.py` has three parameters: `directory`, `eventsPerJob` and `outputdir`. Notice that it will look for the **PhaseIISummer17GenOnly/\<my-sample-name\>/GEN** path in the `directory` parameter, and it will prepare the output location in `outputdir/<my-sample-name>`. Therefore we need create a path in gridui, so we can copy there the private GEN files produced by Alicia.
+Remember that the macro `make_gridui.py` has three parameters: `directory`, `eventsPerJob` and `outputdir`. Notice that it will look for the **PhaseIISummer17GenOnly/\<my-sample-name\>/GEN** path in the `directory` parameter, and it will prepare the output location in `outputdir/<my-sample-name>`. Therefore we need to create a path in gridui, where we can copy there the private GEN files produced by Alicia.
 
     ssh gridui.ifca.es
     mkdir -p /gpfs/gaes/cms/store/mc/PhaseIISummer17GenOnly/DisplacedSUSY_SmuonToMuNeutralino_M-200_CTau-2_14TeV_PhaseII/GEN
@@ -95,9 +95,9 @@ Remember that the macro `make_gridui.py` has three parameters: `directory`, `eve
     scp EXO-PhaseIITDRSpring17GS-00001_3.root piedra@gridui.ifca.es:/gpfs/gaes/cms/store/mc/PhaseIISummer17GenOnly/DisplacedSUSY_SmuonToMuNeutralino_M-200_CTau-2_14TeV_PhaseII/GEN/.
     scp EXO-PhaseIITDRSpring17GS-00001_4.root piedra@gridui.ifca.es:/gpfs/gaes/cms/store/mc/PhaseIISummer17GenOnly/DisplacedSUSY_SmuonToMuNeutralino_M-200_CTau-2_14TeV_PhaseII/GEN/.
 
-    ssh gridui.ifca.es
-
 Now we can test Pablo's code with Alicia's private GEN production.
 
+    ssh gridui.ifca.es
+    ...
     python make_gridui.py /gpfs/gaes/cms/store/mc/PhaseIISummer17GenOnly/DisplacedSUSY_SmuonToMuNeutralino_M-200_CTau-2_14TeV_PhaseII/GEN 1000 /gpfs/projects/cms/piedra/code/madanalysis5/tools/delphes/test
 
