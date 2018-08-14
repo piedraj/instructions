@@ -130,11 +130,13 @@ Copy one of the Delphes files made by Pablo.
 
     scp piedra@gridui.ifca.es:/gpfs/projects/cms/parbol/DisplacedSUSY_stopToBottom_M_200_10000mm_TuneCP5_14TeV_pythia8/DisplacedSUSY_stopToBottom_M_200_10000mm_TuneCP5_14TeV_pythia8.root /eos/user/p/piedra/delphes/.
 
-Prepare a config file and run.
+Prepare a config file.
 
     cp config/testSUSYsamples.txt config/testSUSYsamples_piedra.txt
 
     emacs -nw config/testSUSYsamples_piedra.txt
+
+It is time to run.
 
     ./runAnalyser config/testSUSYsamples_piedra.txt
 
