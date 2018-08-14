@@ -5,7 +5,7 @@ The Delphes modified version that can be found in `/gpfs/projects/cms/parbol/cod
    * timing information;
    * long-lived particles treatment;
    * muon efficiencies vs. d0 and dz;
-   * Tight muons realistic parameterization vs. d0 and dz;
+   * tight muons realistic parameterization vs. d0 and dz;
    * accepts CMS GEN as input;
    * splits the number of jobs;
 
