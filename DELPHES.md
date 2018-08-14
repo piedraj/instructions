@@ -9,7 +9,7 @@ The Delphes modified version that can be found in `/gpfs/projects/cms/parbol/cod
    * accepts CMS GEN as input;
    * splits the number of jobs;
 
-The main macro is called `make_gridui.py`. It creates the output structure and the `run.sh` script, which contains all that is needed to submit the jobs. We aware that every user needs to adapt the file `submit_template_gridui.sh` to his/her directories.
+The main macro is called `make_gridui.py`. It creates the output structure and the `run.sh` script, which contains all that is needed to submit the jobs. Every user needs to adapt the file `submit_template_gridui.sh` to his/her directories.
 
     python make_gridui.py <directory> <eventsperjob> <output>
 
