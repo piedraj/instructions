@@ -107,3 +107,42 @@ It looks like gridui is busy.
     -----------------------------------------------------------------------------------------------------------------
      135233 0.60165 DisplacedS piedra       qw    08/14/2018 15:35:16                                    1
 
+
+# Reading the Delphes files
+
+Login to lxplus and clone Alicia's DAnalysis code.
+
+    ssh lxplus.cern.ch
+
+    bash -l
+    cd /afs/cern.ch/work/p/piedra/public
+
+    git clone https://github.com/calderona/DAnalysis
+    cd DAnalysis
+    git checkout YRupdate
+
+    source env.sh
+    make -j
+
+Copy one of the Delphes files made by Pablo.
+ 
+    mkdir /eos/user/p/piedra/delphes
+
+    scp piedra@gridui.ifca.es:/gpfs/projects/cms/parbol/DisplacedSUSY_stopToBottom_M_200_10000mm_TuneCP5_14TeV_pythia8/DisplacedSUSY_stopToBottom_M_200_10000mm_TuneCP5_14TeV_pythia8.root /eos/user/p/piedra/delphes/.
+
+Prepare a config file and run.
+
+    cp config/testSUSYsamples.txt config/testSUSYsamples_piedra.txt
+
+    emacs -nw config/testSUSYsamples_piedra.txt
+
+    ./runAnalyser config/testSUSYsamples_piedra.txt
+    basicAnalyzer::readConfigFile: reading input file 
+    basicAnalyzer::readConfigFile: input file read in. Free for changes.
+    Error in cling::AutoloadingVisitor::InsertIntoAutoloadingState:
+       Missing FileEntry for classes/DelphesModule.h
+       requested to autoload type DelphesModule
+    Error in cling::AutoloadingVisitor::InsertIntoAutoloadingState:
+       Missing FileEntry for classes/DelphesFactory.h
+       requested to autoload type DelphesFactory
+
