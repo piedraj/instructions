@@ -110,7 +110,7 @@ It looks like gridui is busy.
 
 # Reading the Delphes files
 
-Login to lxplus and clone Alicia's DAnalysis code.
+Login to lxplus and clone Alicia's **DAnalysis** code.
 
     ssh lxplus.cern.ch
 
@@ -137,6 +137,7 @@ Prepare a config file and run.
     emacs -nw config/testSUSYsamples_piedra.txt
 
     ./runAnalyser config/testSUSYsamples_piedra.txt
+
     basicAnalyzer::readConfigFile: reading input file 
     basicAnalyzer::readConfigFile: input file read in. Free for changes.
     Error in cling::AutoloadingVisitor::InsertIntoAutoloadingState:
