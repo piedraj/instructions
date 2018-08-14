@@ -140,6 +140,8 @@ It is time to run.
 
     ./runAnalyser config/testSUSYsamples_piedra.txt
 
+And here is where we fail.
+
     basicAnalyzer::readConfigFile: reading input file 
     basicAnalyzer::readConfigFile: input file read in. Free for changes.
     Error in cling::AutoloadingVisitor::InsertIntoAutoloadingState:
