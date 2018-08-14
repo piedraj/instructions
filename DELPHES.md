@@ -1,6 +1,6 @@
 # Pablo's instructions
 
-En `/gpfs/projects/cms/parbol/code` hay una versión de Delphes modificada para:
+The Delphes modified version that can be found in `/gpfs/projects/cms/parbol/code` includes several improvements.
 
    * meter la información del timing;
    * hacer tratamiento de partículas long-lived;
@@ -80,3 +80,24 @@ Once the single file test has been successful, you can then submit all the files
 # Check your jobs
 
     qstat -u piedra
+
+
+# Work in progress
+
+The macro `make_gridui.py` looks for the **PhaseIISummer17GenOnly/<my-sample-name>/GEN** path in the `directory` paremeter. It will fail if they are not found, and it will prepare the output location in `outputdir/<my-sample-name>`. Therefore we create the destination path in gridui, and copy there the private GEN files produced by Alicia.
+
+    ssh gridui.ifca.es
+    mkdir -p /gpfs/gaes/cms/store/mc/PhaseIISummer17GenOnly/DisplacedSUSY_SmuonToMuNeutralino_M-200_CTau-2_14TeV_PhaseII/GEN
+
+    ssh lxplus.cern.ch
+    cd /eos/cms/store/group/phys_higgs/cmshww/calderon/Phase2/CRAB_PrivateMC/DisplacedSUSY_SmuonToMuNeutralino_M-200_CTau-2_14TeV_PhaseII/180808_073714/0000
+
+    scp EXO-PhaseIITDRSpring17GS-00001_3.root piedra@gridui.ifca.es:/gpfs/gaes/cms/store/mc/PhaseIISummer17GenOnly/DisplacedSUSY_SmuonToMuNeutralino_M-200_CTau-2_14TeV_PhaseII/GEN/.
+    scp EXO-PhaseIITDRSpring17GS-00001_4.root piedra@gridui.ifca.es:/gpfs/gaes/cms/store/mc/PhaseIISummer17GenOnly/DisplacedSUSY_SmuonToMuNeutralino_M-200_CTau-2_14TeV_PhaseII/GEN/.
+
+    ssh gridui.ifca.es
+
+Now it is time to test Pablo's code with Alicia's private GEN production.
+
+    python make_gridui.py /gpfs/gaes/cms/store/mc/PhaseIISummer17GenOnly/DisplacedSUSY_SmuonToMuNeutralino_M-200_CTau-2_14TeV_PhaseII/GEN 1000 /gpfs/projects/cms/piedra/code/madanalysis5/tools/delphes/test
+
