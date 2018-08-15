@@ -9,7 +9,7 @@ So far it compares the Lepton, Electron and Muon collections. It works for both 
     root -l -b -q runTestNano.C
 
 
-# How to normalize the MC?
+# How to normalize the MC
 
 This has changed with respect to the 2016 latino trees. While in the past we were using the sign, now we take the full `Generator_weight` value.
 
@@ -18,8 +18,8 @@ This has changed with respect to the 2016 latino trees. While in the past we wer
 
 # Can I use tight electrons?
 
-In the current nanoLatino production there is only one tight electron that can be used in the Lepton collection. It is `Lepton_isTightElectron_TightFall17`. To redefine offline other tight leptons one should require thresholds as in the example below, following the (Multivariate Electron Identification for Run2
-)[https://twiki.cern.ch/twiki/bin/viewauth/CMS/MultivariateElectronIdentificationRun2] instructions.
+In the current nanoLatino production there is only one tight electron that can be used in the Lepton collection. It is `Lepton_isTightElectron_TightFall17`. To redefine offline other tight leptons one should require thresholds as in the example below, following the [Multivariate Electron Identification for Run2
+](https://twiki.cern.ch/twiki/bin/viewauth/CMS/MultivariateElectronIdentificationRun2) instructions.
 
     Electron_mvaFall17V2noIso_WPL[Lepton_electronIdx[idx]] < -0.86 (barrel high pt)
     Electron_mvaFall17V2noIso_WPL[Lepton_electronIdx[idx]] < -0.72 (endcap high pt)
