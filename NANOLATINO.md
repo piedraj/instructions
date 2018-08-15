@@ -1,6 +1,6 @@
 # nanoLatino
 
-These notes can be used in the evolving code that reads nanoLatino trees.
+These notes should be implemented in the evolving code that reads nanoLatino trees.
 
 
 # Evolving code at IFCA
