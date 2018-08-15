@@ -1,3 +1,5 @@
+# nanoLatino
+
 These notes can be used in the evolving code that reads nanoLatino trees.
 
 
