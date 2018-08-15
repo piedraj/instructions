@@ -29,26 +29,28 @@ In the current nanoLatino production there is only one tight electron that can b
 
 # What triggers should I use?
 
-**DoubleEG.**
+**DoubleEG**
 
     DATA and MC: HLT_Ele23_Ele12_CaloIdL_TrackIdL_IsoVL
 
-**DoubleMuon.**
+**DoubleMuon**
 
     DATA: HLT_Mu17_TrkIsoVVL_Mu8_TrkIsoVVL_DZ       (run <= 299367)
           HLT_Mu17_TrkIsoVVL_Mu8_TrkIsoVVL_DZ_Mass8 (run >  299367)
       MC: HLT_Mu17_TrkIsoVVL_Mu8_TrkIsoVVL_DZ
 
-**MuonEG.** We need to apply a lumi weighted DZ efficiency SF, which is 0.86 for emu and 0.986 for mue.
+**MuonEG**
+
+We need to apply a lumi weighted DZ efficiency SF, which is 0.86 for emu and 0.986 for mue.
 
     DATA: HLT_Mu12_TrkIsoVVL_Ele23_CaloIdL_TrackIdL_IsoVL_DZ OR HLT_Mu23_TrkIsoVVL_Ele12_CaloIdL_TrackIdL_IsoVL_DZ (run <= 299367)
           HLT_Mu12_TrkIsoVVL_Ele23_CaloIdL_TrackIdL_IsoVL_DZ OR HLT_Mu23_TrkIsoVVL_Ele12_CaloIdL_TrackIdL_IsoVL    (run >  299367)
     MC:   HLT_Mu12_TrkIsoVVL_Ele23_CaloIdL_TrackIdL_IsoVL OR HLT_Mu23_TrkIsoVVL_Ele12_CaloIdL_TrackIdL_IsoVL
 
-**SingleMuon.**
+**SingleMuon**
 
     DATA and MC: HLT_IsoMu27
 
-**SingleElectron.**
+**SingleElectron**
 
     DATA and MC: HLT_Ele35_WPTight_Gsf
