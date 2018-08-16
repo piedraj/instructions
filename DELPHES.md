@@ -155,6 +155,6 @@ And here is where we fail.
 
 # Anne-Marie's Delphes ntuples
 
-**August 16th, 2018.** The following ntuples have been made using Jan's ntupler with a few modifications (updated to Delphes pre14 version for taus, update in bjets discriminant value saved) from this (repository)[https://github.com/vukasinmilosevic/PhaseTwoAnalysis/tree/AM-dev]. They correspond to many of the Delphes available background samples.
+**August 16th, 2018.** The following ntuples have been made using Jan's ntupler with a few modifications (updated to Delphes pre14 version for taus, update in bjets discriminant value saved) from this [repository](https://github.com/vukasinmilosevic/PhaseTwoAnalysis/tree/AM-dev). They correspond to many of the Delphes available background samples.
 
-    (root://eoscms.cern.ch/) /eos/cms/store/group/phys_higgs/future/amagnan/200PU/
+    /eos/cms/store/group/phys_higgs/future/amagnan/200PU/
