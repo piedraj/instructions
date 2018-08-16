@@ -4,3 +4,18 @@ This is my collection of not-so-random instructions. Contributions are always we
 
     git clone https://github.com/piedraj/instructions
 
+## BRILCALC
+
+Instructions to install and use the CMS tool for luminosity. 
+
+## DELPHES
+
+Work in progress with the Delphes framework.
+
+## NANOLATINO
+
+Work in progress with the nanoLatino trees.
+
+## VALIDATION
+
+Work in progress with the Muon Validation.
