@@ -26,7 +26,7 @@ The output will be located here.
 
 # HTCondor
 
-To submit jobs to the [HTCondor](http://batchdocs.web.cern.ch/batchdocs/local/quick.html) batch system add the line `batchType = 'condor'` in your `LatinoAnalysis/Tools/python/userConfig.py` file. Then you can proceed as usual by adding the batch `queue` name. These are the possible [queue flavours](https://twiki.cern.ch/twiki/bin/view/ABPComputing/LxbatchHTCondor).
+To submit jobs to the [HTCondor](http://batchdocs.web.cern.ch/batchdocs/local/quick.html) batch system add the line `batchType = 'condor'` in your `LatinoAnalysis/Tools/python/userConfig.py` file. Then you can proceed as usual by adding the batch [queue flavour](https://twiki.cern.ch/twiki/bin/view/ABPComputing/LxbatchHTCondor).
 
     mkBatch.py --clean
     voms-proxy-init -voms cms -rfc --valid 168:0
