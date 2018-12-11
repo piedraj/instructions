@@ -30,7 +30,7 @@ To submit jobs to the [HTCondor](http://batchdocs.web.cern.ch/batchdocs/local/qu
 
     mkBatch.py --clean
     voms-proxy-init -voms cms -rfc --valid 168:0
-    mkPostProc.py -p Fall2017_nAOD_v1_Full2017v2 -s MCCorr2017 -i MCl1loose2017v2 -T WWW,WWZ,WZZ,ZZZ,WWG,Wg_MADGRAPHMLM --queue=tomorrow
+    mkPostProc.py -p Fall2017_nAOD_v1_Full2017v2 -s MCCorr2017 -i MCl1loose2017v2 -b -T WWW,WWZ,WZZ,ZZZ,WWG,Wg_MADGRAPHMLM --queue=tomorrow
 
 # Status
 
