@@ -41,6 +41,10 @@ To check the status of the jobs.
 
 # Cleanup
 
+In case the jobs submitted by `$USER` to the HTCondor batch system need to be removed.
+
+    condor_rm $USER
+
 In case the files produced by `$USER` need to be removed.
 
     cd /eos/cms/store/group/phys_higgs/cmshww/amassiro/HWWNano/Fall2017_nAOD_v1_Full2017v2/MCl1loose2017v2__MCCorr2017
