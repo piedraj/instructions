@@ -13,7 +13,7 @@ The common documentation can be found in the [NanoGardener](https://github.com/l
 
 # Submit jobs
 
-To submit jobs (and resubmit the failed ones) the procedure is simple.
+To submit jobs the procedure is simple.
 
     voms-proxy-init -voms cms -rfc --valid 168:0
     mkPostProc.py -p Fall2017_nAOD_v1_Full2017v2 -s MCl1loose2017v2 -b -T WWW,WWZ,WZZ,ZZZ,WWG,Wg_MADGRAPHMLM
@@ -38,3 +38,10 @@ To check the status of the jobs.
 
     mkBatch.py --status
     condor_q
+
+# Cleanup
+
+In case the files produced by `$USER` need to be removed.
+
+    cd /eos/cms/store/group/phys_higgs/cmshww/amassiro/HWWNano/Fall2017_nAOD_v1_Full2017v2/MCl1loose2017v2__MCCorr2017
+    ls -lrt | grep $USER | awk '{print $9}' | xargs -n 1 rm
