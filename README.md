@@ -16,6 +16,10 @@ Work in progress with the Delphes framework.
 
 Work in progress with the nanoLatino trees.
 
+## PLOTSCONFIGURATIONS
+
+How to produce latino distributions from scratch.
+
 ## VALIDATION
 
 Work in progress with the Muon Validation.
