@@ -105,7 +105,7 @@ And wait until all jobs have finished.
 
 # Draw distributions
 
-Check that `samples.py and `plot.py` have the same content. Remove the proccesses that are not in `samples.py` from `plot.py`.
+Check and remove from `plot.py` the proccesses that are not in `samples.py`.
 
     mkPlot.py \
         --pycfg=configuration.py \
