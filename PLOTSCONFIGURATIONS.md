@@ -18,7 +18,7 @@
 
 # Connect to GitHub with SSH
 
-The instructions to generate an SSH key can be found [here](https://help.github.com/en/articles/connecting-to-github-with-ssh). Once you have the SSH key it has to be [associated with your GitHub account](https://github.com/settings/keys). If the key is not permanently added, the following should be done in every new login:
+The instructions to generate an SSH key can be found [here](https://help.github.com/en/articles/connecting-to-github-with-ssh). Once you have the SSH key it has to be [associated with your GitHub account](https://github.com/settings/keys). If the key is not permanently added, the following should be done in every new login.
 
     eval "$(ssh-agent -s)"
     ssh-add ~/.ssh/id_rsa
@@ -32,17 +32,23 @@ The instructions to generate an SSH key can be found [here](https://help.github.
     source LatinosSetup/SetupShapeOnly.sh
 
 
-#Create your user configuration
+# Create your user configuration
 
     cd $CMSSW_BASE/src/LatinoAnalysis/Tools/python
     cp userConfig_TEMPLATE.py userConfig.py
 
     emacs -nw userConfig.py
-    # Replace the following line with your own directory
+
+Replace the following line
+
     baseDir = '/afs/cern.ch/user/x/xjanssen/cms/HWW2015/'
+
+with your own directory,
+
     baseDir = '/afs/cern.ch/user/[YourInitial]/[YourUsername]/cms/HWW2015/'
 
-    # Add the following line
+And add the following line
+
     batchType = 'condor'
 
 
@@ -67,9 +73,10 @@ The instructions to generate an SSH key can be found [here](https://help.github.
 
 # Produce histograms
 
-We are using the [WW configuration](https://github.com/latinos/PlotsConfigurations/tree/master/Configurations/WW/Full2017) as example.
+We are following the [WW configuration](https://github.com/latinos/PlotsConfigurations/tree/master/Configurations/WW/Full2017).
 
     cd $CMSSW_BASE/src/PlotsConfigurations/Configurations/WW/Full2017
+
     mkShapesMulti.py \
         --pycfg=configuration.py \
         --inputDir=/eos/cms/store/group/phys_higgs/cmshww/amassiro/HWWNano/ \
@@ -83,7 +90,7 @@ We are using the [WW configuration](https://github.com/latinos/PlotsConfiguratio
 
     condor_q
 
-And wait until all jobs have finished :)
+And wait until all jobs have finished.
 
 
 # Group (hadd) histograms
@@ -98,7 +105,7 @@ And wait until all jobs have finished :)
 
 # Draw distributions
 
-Check that samples.py and plot.py have the same content. Remove from plot.py the proccesses that are not in samples.py.
+Check that `samples.py and `plot.py` have the same content. Remove the proccesses that are not in `samples.py` from `plot.py`.
 
     mkPlot.py \
         --pycfg=configuration.py \
