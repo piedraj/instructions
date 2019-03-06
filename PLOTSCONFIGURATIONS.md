@@ -136,7 +136,7 @@ Check and remove from `plot.py` the proccesses that are not in `samples.py`.
 
 # Create a www area (EOS website)
 
-Follow these [instructions](https://cernbox-manual.web.cern.ch/cernbox-manual/en/web/personal_website_content.html). Once the website has been created you can manage it [here](https://webservices.web.cern.ch/webservices/Services/ManageSite/). In order to allow access to your website, add an .htaccess file to your www directory.
+Follow these [instructions](https://cernbox-manual.web.cern.ch/cernbox-manual/en/web/personal_website_content.html). Once the website has been created you can manage it [here](https://webservices.web.cern.ch/webservices/Services/ManageSite/). In order to allow access to your website, add an `.htaccess` file to your www directory.
 
     wget https://raw.githubusercontent.com/piedraj/AnalysisCMS/master/test/.htaccess
 
