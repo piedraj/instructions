@@ -65,6 +65,23 @@ And add the following line
     scram b -j 10
 
 
+# Obtain a VO CMS certificate
+
+The complete set of instructions can be found [here](https://twiki.cern.ch/twiki/bin/view/CMSPublic/SWGuideLcgAccess#How_to_register_in_the_CMS_VO). In order to obtain a VOMS certificate you must first get a personal certificate (Steps 1 and 2 of the previous link), which consists of a private and a public keys (PEM files). You can follow the [PersonalCertificate](https://twiki.cern.ch/twiki/bin/view/CMSPublic/PersonalCertificate) TWiki to install the certificate in your browser. Then you will need to export the certificate into a pair of PEM files, following these [How to](https://ca.cern.ch/ca/Help/?kbid=024010) instructions.
+
+Once you have your personal certificate you can proceed with Step 3. Go to the [VOMS registration](https://voms2.cern.ch:8443/voms/cms/register) page and submit a registration. Then you need to wait for an admin to confirm your registration (you will receive a notification email). Here you can find a VOMS [FAQ](https://twiki.cern.ch/twiki/bin/view/CMSPublic/SWGuideVomsFAQ). You can verify the expiration date of your certificate with:
+
+    openssl x509 -subject -dates -noout -in $HOME/.globus/usercert.pem
+
+To check if you can generate proxies,
+
+    grid-proxy-init -debug -verify
+
+To check if you are a member of the CMS VO,
+
+    voms-proxy-init -voms cms
+
+
 # Produce a valid VOMS proxy
 
     voms-proxy-init -voms cms -rfc --valid 168:0
@@ -117,6 +134,18 @@ Check and remove from `plot.py` the proccesses that are not in `samples.py`.
         --showIntegralLegend=1
 
 
-# Copy or link to the www area
+# Create a www area (EOS website)
 
-To be filled.
+Follow these [instructions](https://cernbox-manual.web.cern.ch/cernbox-manual/en/web/personal_website_content.html). Once the website has been created you can manage it [here](https://webservices.web.cern.ch/webservices/Services/ManageSite/) by clicking on your website on the left,
+
+    http://cern.ch/[YourUser]
+
+In order to allow access to your website, add an .htaccess file to your www directory,
+
+    wget https://raw.githubusercontent.com/piedraj/AnalysisCMS/master/test/.htaccess
+
+Check that it contains `Options+Indexes`. To improve the usability of the website add an `index.php` file to every directory and subdirectory,
+
+    wget https://raw.githubusercontent.com/piedraj/AnalysisCMS/master/index.php
+
+If you have followed these steps and the website is unavailable (error 403) you can open a ticket with the [CERN Service Portal](https://cern.service-now.com/service-portal/).
