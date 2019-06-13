@@ -75,7 +75,7 @@ If you have several regions to fit, you need to combine all datacards into a sin
                     datacards/ww_top1jet_sf/events/datacard.txt \
                     > datacards/datacard_combined.txt
 
-Add `[0.1,10]` in the normalization lines of `datacard_combined.txt`
+Add `[0.1,10]` in the normalization lines of the `datacard_combined.txt` file.
 
     emacs -nw datacards/datacard_combined.txt
 
