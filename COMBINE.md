@@ -15,7 +15,10 @@ You need to have a `PlotsConfigurations` area. To do so, follow the [PLOTSCONFIG
 
 # Prepare the combine environment
 
-The instructions that we have followed can be found [here](https://github.com/nucleosynthesis/HiggsAnalysis-CombinedLimit/wiki/gettingstarted#root6-slc6-release-cmssw_8_1_x---recommended-version). This is what we have done on June 12th, 2019.
+The instructions that we have followed can be found [here](https://github.com/nucleosynthesis/HiggsAnalysis-CombinedLimit/wiki/gettingstarted#root6-slc6-release-cmssw_8_1_x---recommended-version). This is what we have done on June 13th, 2019.
+
+    mkdir combine
+    cd combine
 
     export SCRAM_ARCH=slc7_amd64_gcc530  # slc6 in the reference instructions
     cmsrel CMSSW_8_1_0
@@ -72,7 +75,7 @@ If you have several regions to fit, you need to combine all datacards into a sin
                     datacards/ww_top1jet_sf/events/datacard.txt \
                     > datacards/datacard_combined.txt
 
-Add `[0.1,10]` in the corresponding lines of `datacard_combined.txt`
+Add `[0.1,10]` in the normalization lines of `datacard_combined.txt`
 
     emacs -nw datacards/datacard_combined.txt
 
@@ -91,12 +94,20 @@ Add `[0.1,10]` in the corresponding lines of `datacard_combined.txt`
 
 Fix the signal parameter to 1 and run only on MC by using the `-t -1` option.
 
-    combineTool.py -M Impacts -d datacards/datacard_combined.root -m 125 --doInitialFit -t -1 --expectSignal=1 --robustFit 1
+    combineTool.py \
+        -M Impacts \
+        -d datacards/datacard_combined.root \
+        -m 125 \
+        --doInitialFit \
+        -t -1 \
+        --expectSignal 1 \
+        --robustFit 1
 
 This is the output.
 
     Have POIs: ['r']
-    >> combine -M MultiDimFit -n _initialFit_Test --algo singles --redefineSignalPOIs r -t -1 --expectSignal=1 --robustFit 1 -m 125 -d datacards/datacard_combined.root
+    >> combine -M MultiDimFit -n _initialFit_Test --algo singles --redefineSignalPOIs r -t -1 --expectSignal 1 --robustFit 1 -m 125 -d datacards/datacard_combined.root
+
      <<< Combine >>> 
     >>> including systematics
        Options for Robust Minimizer :: 
