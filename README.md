@@ -8,6 +8,10 @@ This is my collection of not-so-random instructions. Contributions are always we
 
 Instructions to install and use the CMS tool for luminosity. 
 
+## COMBINE
+
+How to run combine together with the latino framework.
+
 ## DELPHES
 
 Work in progress with the Delphes framework.
