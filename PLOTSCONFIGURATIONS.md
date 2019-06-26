@@ -117,6 +117,7 @@ And wait until all jobs have finished.
         --inputDir=/eos/cms/store/group/phys_higgs/cmshww/amassiro/HWWNano/ \
         --doHadd=True \
         --batchSplit=Samples,Files \
+        --nThreads=8 \
         --doNotCleanup
 
 
