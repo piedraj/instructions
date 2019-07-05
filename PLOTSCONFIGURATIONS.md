@@ -127,7 +127,7 @@ Check and remove from `plot.py` the proccesses that are not in `samples.py`.
 
     mkPlot.py \
         --pycfg=configuration.py \
-        --inputFile=rootFile/plots_WW.root \
+        --inputFile=rootFile/plots_VH2j.root \
         --minLogC=0.01 \
         --minLogCratio=0.01 \
         --maxLogC=1000 \
