@@ -154,3 +154,7 @@ If you have followed these steps and the website is unavailable (error 403) plea
     cp ../index.php .
     find . -type d -exec cp index.php {} \;
 
+Go to the web.
+
+    https://piedra.web.cern.ch/piedra/
+
