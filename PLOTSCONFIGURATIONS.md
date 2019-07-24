@@ -117,6 +117,7 @@ And wait until all jobs have finished.
         --inputDir=/eos/cms/store/group/phys_higgs/cmshww/amassiro/HWWNano/ \
         --doHadd=True \
         --batchSplit=Samples,Files \
+        --nThreads=8 \
         --doNotCleanup
 
 
@@ -126,7 +127,7 @@ Check and remove from `plot.py` the proccesses that are not in `samples.py`.
 
     mkPlot.py \
         --pycfg=configuration.py \
-        --inputFile=rootFile/plots_WW.root \
+        --inputFile=rootFile/plots_VH2j.root \
         --minLogC=0.01 \
         --minLogCratio=0.01 \
         --maxLogC=1000 \
