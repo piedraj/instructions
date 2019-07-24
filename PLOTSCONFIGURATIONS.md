@@ -145,3 +145,11 @@ Check that it contains `Options+Indexes`. To improve the usability of the websit
     wget https://raw.githubusercontent.com/piedraj/AnalysisCMS/master/index.php
 
 If you have followed these steps and the website is unavailable (error 403) please open a ticket with the [CERN Service Portal](https://cern.service-now.com/service-portal/).
+
+# Share the results
+
+    cp -r plotVH2j_2016 /afs/cern.ch/user/p/piedra/www/.
+    cd /afs/cern.ch/user/p/piedra/www/plotVH2j_2016
+    cp ../index.php .
+    find . -type d -exec cp index.php {} \;
+
