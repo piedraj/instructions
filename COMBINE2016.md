@@ -1,20 +1,14 @@
 # Connect to lxplus
 
     ssh -Y lxplus.cern.ch -o ServerAliveInterval=240
-
-
-# Set the Bash shell
-
     bash -l
 
 
 # Combine documentation
 
-The option `-t` is used to specify to combine to first generate a toy dataset which will be used in replacement of the real data. The `-t -1` choice will produce an Asimov dataset in which statistical fluctuations are suppressed.
+The option `-t` is used to specify to combine to first generate a toy dataset which will be used in replacement of the real data. The `-t -1` choice will produce an Asimov dataset in which statistical fluctuations are suppressed. The steps below correspond to the VH2j datacards reading 2016 data.
 
     http://cms-analysis.github.io/HiggsAnalysis-CombinedLimit/
-
-The following steps correspond to the VH2j datacards reading 2016 data.
 
 
 # Make datacards
