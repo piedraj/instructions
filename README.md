@@ -10,19 +10,27 @@ Instructions to install and use the CMS tool for luminosity.
 
 ## COMBINE
 
-How to run combine together with the latino framework.
+How to run combine together with the Latino framework.
+
+## COMBINE2016
+
+Steps performed running combine on 2016 data with the Latino framework.
 
 ## DELPHES
 
-Work in progress with the Delphes framework.
+Work performed with the Delphes framework.
 
 ## NANOLATINO
 
-Work in progress with the nanoLatino trees.
+Tests performed with nanoLatino trees.
 
 ## PLOTSCONFIGURATIONS
 
-How to produce latino distributions from scratch.
+How to produce Latino distributions from scratch.
+
+## POSTPROCESSING
+
+Main ingredients of the Latino postprocessing instructions.
 
 ## VALIDATION
 
