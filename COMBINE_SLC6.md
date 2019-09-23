@@ -4,11 +4,6 @@
     bash -l
 
 
-# Before setting up combine
-
-You need to have a `PlotsConfigurations` area. To do so, follow the [PLOTSCONFIGURATIONS.md](https://github.com/piedraj/instructions/blob/master/PLOTSCONFIGURATIONS.md) instructions.
-
-
 # Prepare the combine environment
 
 The instructions that we have followed can be found [here](https://github.com/nucleosynthesis/HiggsAnalysis-CombinedLimit/wiki/gettingstarted#root6-slc6-release-cmssw_8_1_x---recommended-version). This is what we have done on June 13th, 2019.
