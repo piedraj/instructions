@@ -1,10 +1,6 @@
 # Connect to lxplus6
 
     ssh -Y lxplus6.cern.ch -o ServerAliveInterval=240
-
-
-# Set the Bash shell
-
     bash -l
 
 
