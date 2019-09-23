@@ -2,6 +2,11 @@
 
     ssh -Y lxplus.cern.ch -o ServerAliveInterval=240
     bash -l
+    
+    
+# Setup combine
+
+Follow the instructions documented in [COMBINE_SLC7](https://github.com/piedraj/instructions/blob/master/COMBINE_SLC7.md).
 
 
 # Combine documentation
