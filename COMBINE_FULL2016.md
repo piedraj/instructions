@@ -6,12 +6,7 @@
     
 # Setup combine
 
-Follow the instructions documented in [COMBINE_SLC7](https://github.com/piedraj/instructions/blob/master/COMBINE_SLC7.md).
-
-
-# Combine documentation
-
-The option `-t` is used to specify to combine to first generate a toy dataset which will be used in replacement of the real data. The `-t -1` choice will produce an Asimov dataset in which statistical fluctuations are suppressed. **The steps below correspond to the VH2j datacards reading 2016 data.**
+Follow the instructions documented in [COMBINE_SLC7](https://github.com/piedraj/instructions/blob/master/COMBINE_SLC7.md). The option `-t` is used to specify to combine to first generate a toy dataset which will be used in replacement of the real data. The `-t -1` choice will produce an Asimov dataset in which statistical fluctuations are suppressed. **The steps below correspond to the VH2j datacards reading 2016 data.**
 
     http://cms-analysis.github.io/HiggsAnalysis-CombinedLimit/
 
