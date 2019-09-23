@@ -90,9 +90,7 @@ To check if you are a member of the CMS VO,
 
 # Produce histograms
 
-We are following the [WW configuration](https://github.com/latinos/PlotsConfigurations/tree/master/Configurations/WW/Full2017).
-
-    cd $CMSSW_BASE/src/PlotsConfigurations/Configurations/WW/Full2017
+    cd $CMSSW_BASE/src/PlotsConfigurations/Configurations/VH2j/Full2016_nanoAODv4
 
     mkShapesMulti.py \
         --pycfg=configuration.py \
