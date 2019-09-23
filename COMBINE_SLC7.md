@@ -2,13 +2,8 @@
 
     ssh -Y lxplus.cern.ch -o ServerAliveInterval=240
     bash -l
-
-
-# Before setting up combine
-
-You need to have a `PlotsConfigurations` area. To do so, follow the [PLOTSCONFIGURATIONS.md](https://github.com/piedraj/instructions/blob/master/PLOTSCONFIGURATIONS.md) instructions.
-
-
+    
+    
 # Prepare the combine environment
 
 The instructions that we have followed can be found [here](https://github.com/nucleosynthesis/HiggsAnalysis-CombinedLimit/wiki/gettingstarted). This is what we have done on September 23rd, 2019.
