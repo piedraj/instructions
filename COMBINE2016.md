@@ -1,6 +1,6 @@
-# Connect to lxplus
+# Connect to lxplus7
 
-    ssh -Y lxplus6.cern.ch -o ServerAliveInterval=240
+    ssh -Y lxplus.cern.ch -o ServerAliveInterval=240
     bash -l
 
 
@@ -13,12 +13,15 @@ The option `-t` is used to specify to combine to first generate a toy dataset wh
 
 # Make datacards
 
+    cd ~piedra/work/CMSSW_projects/CMSSW_9_4_9/src/PlotsConfigurations/Configurations/VH2j/Full2016_nanoAODv4
+    cmsenv
+
     mkDatacards.py --pycfg=configuration.py --inputFile=rootFile/plots_VH2j_2016.root
 
 
 # Combine datacards
 
-    pushd ~piedra/combine/CMSSW_8_1_0/src/
+    pushd ~piedra/combine/CMSSW_10_2_13/src/
     cmsenv
     popd
 
