@@ -1,6 +1,6 @@
 # Connect to lxplus
 
-    ssh -Y lxplus6.cern.ch -o ServerAliveInterval=240
+    ssh -Y lxplus.cern.ch -o ServerAliveInterval=240
 
 
 # Set the Bash shell
@@ -10,9 +10,8 @@
 
 # Setup a CMSSW release
 
-    export SCRAM_ARCH=slc6_amd64_gcc630
-    cmsrel CMSSW_9_4_9
-    cd CMSSW_9_4_9/src
+    cmsrel CMSSW_10_2_15_patch2
+    cd CMSSW_10_2_15_patch2/src
     cmsenv
 
 
