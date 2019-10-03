@@ -124,7 +124,7 @@ Check and remove from `plot.py` the proccesses that are not in `samples.py`.
 
     mkPlot.py \
         --pycfg=configuration.py \
-        --inputFile=rootFile/plots_VH2j_2016.root \
+        --inputFile=rootFile/plots_VH2j_2017.root \
         --minLogC=0.01 \
         --minLogCratio=0.01 \
         --maxLogC=1000 \
@@ -146,10 +146,9 @@ If you have followed these steps and the website is unavailable (error 403) plea
 
 # Share the results
 
-    cp -r plotVH2j_2016 /afs/cern.ch/user/p/piedra/www/.
-    cd /afs/cern.ch/user/p/piedra/www/plotVH2j_2016
+    cp -r plotVH2j_2017 /afs/cern.ch/user/p/piedra/www/.
+    cd /afs/cern.ch/user/p/piedra/www/plotVH2j_2017
     cp ../index.php .
-    find . -type d -exec cp index.php {} \;
 
 Go to the web.
 
