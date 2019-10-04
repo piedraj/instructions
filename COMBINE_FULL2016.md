@@ -37,7 +37,7 @@ Follow the instructions documented in [COMBINE_SLC7](https://github.com/piedraj/
 # Fixed signal strength
 
     combineTool.py -M Impacts --expectSignal=1 -d datacards/datacard_combined.root -m 125 -t -1 --doInitialFit --robustFit 1
-    combineTool.py -M Impacts --expectSignal=1 -d datacards/datacard_combined.root -m 125 -t -1 --doFits --approx robust --robustFit 1
+    combineTool.py -M Impacts --expectSignal=1 -d datacards/datacard_combined.root -m 125 -t -1 --doFits --robustFit 1
     combineTool.py -M Impacts --expectSignal=1 -d datacards/datacard_combined.root -m 125 -t -1 -o impacts.json
     plotImpacts.py -i impacts.json -o impacts
 
@@ -45,7 +45,7 @@ Follow the instructions documented in [COMBINE_SLC7](https://github.com/piedraj/
 # Fit the data
 
     combineTool.py -M Impacts -d datacards/datacard_combined.root -m 125 --doInitialFit --robustFit 1
-    combineTool.py -M Impacts -d datacards/datacard_combined.root -m 125 --doFits --approx robust --robustFit 1
+    combineTool.py -M Impacts -d datacards/datacard_combined.root -m 125 --doFits --robustFit 1
     combineTool.py -M Impacts -d datacards/datacard_combined.root -m 125 -o impacts.json
     plotImpacts.py -i impacts.json -o impacts
 
