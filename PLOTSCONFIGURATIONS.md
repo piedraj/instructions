@@ -122,7 +122,9 @@ And wait until all jobs have finished.
 
 Check and remove from `plot.py` the proccesses that are not in `samples.py`.
 
+    mkPlot.py --inputFile=rootFile/plots_VH2j_2016.root --minLogC=0.01 --minLogCratio=0.01 --maxLogC=1000 --maxLogCratio=1000 --showIntegralLegend=1
     mkPlot.py --inputFile=rootFile/plots_VH2j_2017.root --minLogC=0.01 --minLogCratio=0.01 --maxLogC=1000 --maxLogCratio=1000 --showIntegralLegend=1
+    mkPlot.py --inputFile=rootFile/plots_VH2j_2018.root --minLogC=0.01 --minLogCratio=0.01 --maxLogC=1000 --maxLogCratio=1000 --showIntegralLegend=1
 
 
 # Create a CERN personal website
