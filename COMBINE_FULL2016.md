@@ -42,6 +42,11 @@ Follow the instructions documented in [COMBINE_SLC7](https://github.com/piedraj/
     plotImpacts.py -i impacts.json -o impacts
 
 
+# Significance
+
+    combine -M Significance --expectSignal=1 -t -1 datacards/datacard_combined.txt
+
+
 # Fit the data
 
     combineTool.py -M Impacts -d datacards/datacard_combined.root -m 125 --doInitialFit --robustFit 1
