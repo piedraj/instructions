@@ -126,7 +126,7 @@ Check and remove from `plot.py` the proccesses that are not in `samples.py`.
     
 To produce blinded distributions (no data) open `plot.py` and set the variable `isBlind` to 1 for `DATA`. Then you will have to produce again the signal region plots.
 
-    mkPlot.py --inputFile=rootFile/plots_VH2j_2016.root --minLogC=0.01 --minLogCratio=0.01 --maxLogC=1000 --maxLogCratio=1000 --showIntegralLegend=1 --onlyCut=VH_2j_emu
+    mkPlot.py --onlyCut=VH_2j_emu --inputFile=rootFile/plots_VH2j_2016.root --minLogC=0.01 --minLogCratio=0.01 --maxLogC=1000 --maxLogCratio=1000 --showIntegralLegend=1
     
     
 # Create a CERN personal website
