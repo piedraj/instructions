@@ -91,7 +91,11 @@ To check if you are a member of the CMS VO,
 
     cd $CMSSW_BASE/src/PlotsConfigurations/Configurations/VH2j/Full2017
 
-    mkShapesMulti.py --inputDir=/eos/cms/store/group/phys_higgs/cmshww/amassiro/HWWNano/ --doBatch=True --batchQueue=workday --batchSplit=Samples,Files
+    mkShapesMulti.py \
+        --inputDir=/eos/cms/store/group/phys_higgs/cmshww/amassiro/HWWNano/ \
+        --doBatch=True \
+        --batchQueue=workday \
+        --batchSplit=Samples,Files
 
 
 # Check job status
@@ -104,7 +108,6 @@ And wait until all jobs have finished.
 # Group (hadd) histograms
 
     mkShapesMulti.py \
-        --pycfg=configuration.py \
         --inputDir=/eos/cms/store/group/phys_higgs/cmshww/amassiro/HWWNano/ \
         --doHadd=True \
         --batchSplit=Samples,Files \
