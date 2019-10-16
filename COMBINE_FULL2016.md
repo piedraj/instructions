@@ -25,13 +25,10 @@ Follow the instructions documented in [COMBINE_SLC7](https://github.com/piedraj/
     cmsenv
     popd
 
-    combineCards.py \
-                    datacards/VH_2j_emu/mll/datacard.txt \
-                    datacards/VH_2j_DYtautau/events/datacard.txt \
-                    datacards/VH_2j_topemu/events/datacard.txt \
-                    > datacards/datacard_combined.txt
-
+    pushd datacards
+    combineCards.py VH_2j_emu/mll/datacard.txt VH_2j_DYtautau/events/datacard.txt VH_2j_topemu/events/datacard.txt > datacard_combined.txt
     text2workspace.py datacards/datacard_combined.txt -m 125
+    popd
 
 
 # Fixed signal strength
