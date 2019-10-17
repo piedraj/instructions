@@ -14,9 +14,13 @@ Follow the instructions documented in [COMBINE_SLC7](https://github.com/piedraj/
 # Make datacards
 
     cd ~piedra/work/CMSSW_projects/CMSSW_9_4_9/src/PlotsConfigurations/Configurations/VH2j/Full2016_nanoAODv4
+    cd ~piedra/work/CMSSW_projects/CMSSW_9_4_9/src/PlotsConfigurations/Configurations/VH2j/Full2017
+    cd ~piedra/work/CMSSW_projects/CMSSW_9_4_9/src/PlotsConfigurations/Configurations/VH2j/Full2018
     cmsenv
 
     mkDatacards.py --pycfg=configuration.py --inputFile=rootFile/plots_VH2j_2016.root
+    mkDatacards.py --pycfg=configuration.py --inputFile=rootFile/plots_VH2j_2017.root
+    mkDatacards.py --pycfg=configuration.py --inputFile=rootFile/plots_VH2j_2018.root
 
 
 # Combine datacards
