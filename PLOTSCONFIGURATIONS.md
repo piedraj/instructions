@@ -89,7 +89,9 @@ To check if you are a member of the CMS VO,
 
 # Produce histograms
 
+    cd $CMSSW_BASE/src/PlotsConfigurations/Configurations/VH2j/Full2016_nanoAODv4
     cd $CMSSW_BASE/src/PlotsConfigurations/Configurations/VH2j/Full2017
+    cd $CMSSW_BASE/src/PlotsConfigurations/Configurations/VH2j/Full2018
 
     mkShapesMulti.py \
         --inputDir=/eos/cms/store/group/phys_higgs/cmshww/amassiro/HWWNano/ \
