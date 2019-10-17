@@ -44,7 +44,7 @@ Follow the instructions documented in [COMBINE_SLC7](https://github.com/piedraj/
 
 # Significance
 
-    combine -M Significance --expectSignal=1 -t -1 datacards/datacard_combined.txt
+    combine -M Significance --expectSignal=1 -t -1 -m 125 datacards/datacard_combined.txt
 
 
 # Fit the data
