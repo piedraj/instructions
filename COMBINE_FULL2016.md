@@ -13,9 +13,9 @@ Follow the instructions documented in [COMBINE_SLC7](https://github.com/piedraj/
 
 # Make datacards
 
-    cd ~piedra/work/CMSSW_projects/CMSSW_10_2_15_patch2/src/PlotsConfigurations/Configurations/VH2j/Full2016_nanoAODv4
-    cd ~piedra/work/CMSSW_projects/CMSSW_10_2_15_patch2/src/PlotsConfigurations/Configurations/VH2j/Full2017
-    cd ~piedra/work/CMSSW_projects/CMSSW_10_2_15_patch2/src/PlotsConfigurations/Configurations/VH2j/Full2018
+    cd ~/work/CMSSW_projects/CMSSW_10_2_15_patch2/src/PlotsConfigurations/Configurations/VH2j/Full2016_nanoAODv4
+    cd ~/work/CMSSW_projects/CMSSW_10_2_15_patch2/src/PlotsConfigurations/Configurations/VH2j/Full2017
+    cd ~/work/CMSSW_projects/CMSSW_10_2_15_patch2/src/PlotsConfigurations/Configurations/VH2j/Full2018
     cmsenv
 
     mkDatacards.py --pycfg=configuration.py --inputFile=rootFile/plots_VH2j_2016.root
