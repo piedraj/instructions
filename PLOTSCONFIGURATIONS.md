@@ -89,6 +89,8 @@ To check if you are a member of the CMS VO,
 
 # Produce histograms
 
+Run 2 analyses are split in 2016, 2017 and 2018. For each year there is a set of data and MC trees, together with different lepton and b-tag working points. Besides, some systematic uncertainties might change. Please go to each year to produce the corresponding histograms.
+
     cd $CMSSW_BASE/src/PlotsConfigurations/Configurations/VH2j/Full2016_nanoAODv4
     cd $CMSSW_BASE/src/PlotsConfigurations/Configurations/VH2j/Full2017
     cd $CMSSW_BASE/src/PlotsConfigurations/Configurations/VH2j/Full2018
