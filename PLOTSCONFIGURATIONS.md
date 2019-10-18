@@ -133,13 +133,13 @@ In the unexpected event that you get errors drawing the distributions, it could 
     mkPlot.py --inputFile=rootFile/plots_VH2j_2017.root --minLogC=0.01 --minLogCratio=0.01 --maxLogC=1000 --maxLogCratio=1000 --showIntegralLegend=1
     mkPlot.py --inputFile=rootFile/plots_VH2j_2018.root --minLogC=0.01 --minLogCratio=0.01 --maxLogC=1000 --maxLogCratio=1000 --showIntegralLegend=1
     
-To produce blinded distributions (without data) in the signal region, open `plot.py` and set the variable `isBlind` to 1 for `DATA`.
+To produce blinded distributions (without data) in the signal region, open `plot.py` and set the variable `isBlind` to `1` for `DATA`.
 
     mkPlot.py --onlyCut=VH_2j_emu --inputFile=rootFile/plots_VH2j_2016.root --minLogC=0.01 --minLogCratio=0.01 --maxLogC=1000 --maxLogCratio=1000 --showIntegralLegend=1
     mkPlot.py --onlyCut=VH_2j_emu --inputFile=rootFile/plots_VH2j_2017.root --minLogC=0.01 --minLogCratio=0.01 --maxLogC=1000 --maxLogCratio=1000 --showIntegralLegend=1
     mkPlot.py --onlyCut=VH_2j_emu --inputFile=rootFile/plots_VH2j_2018.root --minLogC=0.01 --minLogCratio=0.01 --maxLogC=1000 --maxLogCratio=1000 --showIntegralLegend=1
     
-Once the blinded distributions have been produced, don't forget to set back to 0 the variable `isBlind` for `DATA`.
+Once the blinded distributions have been produced, don't forget to set back to `0` the variable `isBlind` for `DATA`.
 
 
 # Create a CERN personal website
