@@ -127,19 +127,21 @@ If you need to cancel all the submitted jobs,
 
 # Draw distributions
 
-Check and remove from `plot.py` the proccesses that are not in `samples.py`.
+In the unexpected event that you get errors drawing the distributions, it could be due to a mismatch between `plot.py` and `samples.py`. To fix them, check and remove from `plot.py` the proccesses that are not in `samples.py`.
 
     mkPlot.py --inputFile=rootFile/plots_VH2j_2016.root --minLogC=0.01 --minLogCratio=0.01 --maxLogC=1000 --maxLogCratio=1000 --showIntegralLegend=1
     mkPlot.py --inputFile=rootFile/plots_VH2j_2017.root --minLogC=0.01 --minLogCratio=0.01 --maxLogC=1000 --maxLogCratio=1000 --showIntegralLegend=1
     mkPlot.py --inputFile=rootFile/plots_VH2j_2018.root --minLogC=0.01 --minLogCratio=0.01 --maxLogC=1000 --maxLogCratio=1000 --showIntegralLegend=1
     
-To produce blinded distributions (no data) open `plot.py` and set the variable `isBlind` to 1 for `DATA`. Then you will have to produce again the signal region plots.
+To produce blinded distributions (without data) in the signal region, open `plot.py` and set the variable `isBlind` to 1 for `DATA`.
 
     mkPlot.py --onlyCut=VH_2j_emu --inputFile=rootFile/plots_VH2j_2016.root --minLogC=0.01 --minLogCratio=0.01 --maxLogC=1000 --maxLogCratio=1000 --showIntegralLegend=1
     mkPlot.py --onlyCut=VH_2j_emu --inputFile=rootFile/plots_VH2j_2017.root --minLogC=0.01 --minLogCratio=0.01 --maxLogC=1000 --maxLogCratio=1000 --showIntegralLegend=1
     mkPlot.py --onlyCut=VH_2j_emu --inputFile=rootFile/plots_VH2j_2018.root --minLogC=0.01 --minLogCratio=0.01 --maxLogC=1000 --maxLogCratio=1000 --showIntegralLegend=1
     
-    
+Once the blinded distributions have been produced, don't forget to set back to 0 the variable `isBlind` for `DATA`.
+
+
 # Create a CERN personal website
 
 Follow these [instructions](https://cernbox-manual.web.cern.ch/cernbox-manual/en/web/personal_website_content.html). Once the website has been created you can manage it [here](https://webservices.web.cern.ch/webservices/Services/ManageSite/). In order to allow access to your website, add an `.htaccess` file to your www directory.
