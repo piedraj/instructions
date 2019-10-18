@@ -106,7 +106,7 @@ Run 2 analyses are split in 2016, 2017 and 2018. For each year there is a set of
 
     condor_q
 
-If needed, you can check the (automatically produced) configuration files of all the submitted jobs, and even submit manually some of them for debugging/test purposes.
+If needed, you can check the (automatically produced) configuration files of all the submitted jobs, and even submit manually some of them for debugging or test purposes.
 
     ls $HOME/cms/HWW2015/jobs
     
