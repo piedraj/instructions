@@ -106,8 +106,14 @@ Run 2 analyses are split in 2016, 2017 and 2018. For each year there is a set of
 
     condor_q
 
-And wait until all jobs have finished.
+If needed, you can check the (automatically produced) configuration files of all the submitted jobs, and even submit manually some of them for debugging/test purposes.
 
+    ls $HOME/cms/HWW2015/jobs
+    
+If you need to cancel all the submitted jobs,
+
+    condor_rm [YourUsername]
+    
 
 # Group (hadd) histograms
 
