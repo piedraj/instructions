@@ -7,7 +7,7 @@ These instructions need to be detailed and expanded.
     
     mkdir testmcproduction
     cd testmcproduction
-    cp /afs/cern.ch/user/c/cprieels/public/ForJonatan/DMScalar_ttbar01j_mphi_50_mchi_1_gSM_1p0_gDM_1p0_tarball.tar.xz .
+    cp /cvmfs/cms.cern.ch/phys_generator/gridpacks/slc6_amd64_gcc481/13TeV/madgraph/V5_2.2.2/TTbarDM_DiLept/DMScalar_ttbar01j_mphi_50_mchi_1_gSM_1p0_gDM_1p0_tarball.tar.xz .
 
     cmsrel CMSSW_8_0_21
     pushd CMSSW_8_0_21/src/
