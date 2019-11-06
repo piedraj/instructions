@@ -20,6 +20,10 @@ Steps performed running combine on 2016, 2017 and 2018 data with the Latino fram
 
 Work performed with the Delphes framework.
 
+## MCPRODUCTION
+
+Very preliminary set of instructions for MC production.
+
 ## NANOLATINO
 
 Tests performed with nanoLatino trees.
