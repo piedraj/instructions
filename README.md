@@ -8,13 +8,13 @@ This is my collection of not-so-random instructions. Contributions are always we
 
 Instructions to install and use the CMS tool for luminosity. 
 
+## COMBINE_SETUP
+
+Instructions to setup combine for SLC6 or SLC7.
+
 ## COMBINE
 
-How to run combine together with the Latino framework.
-
-## COMBINE2016
-
-Steps performed running combine on 2016 data with the Latino framework.
+Steps performed running combine on 2016, 2017 and 2018 data with the Latino framework.
 
 ## DELPHES
 
