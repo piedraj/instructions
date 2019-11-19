@@ -168,11 +168,11 @@ Edit these two files and compare with the originals.
 
     edmDumpEventContent /eos/cms/store/relval/CMSSW_10_6_4_patch1/RelValTTbar_13UP18/FEVTDEBUGHLT/PUpmx25ns_106X_upgrade2018_realistic_v10-v1/10000/6AAD1878-D25B-9F4F-88CE-37FC07EB7219.root
 
-| Collection                              | Type          | Status |
-| :-------------------------------------- |:-------------:|:------:|
-| hltIterL3GlbMuon                        | reco::Track   | works  |
-| hltIterL3MuonMerged                     | reco::Track   | works  |
-| hltIterL3OIMuonTrackSelectionHighPurity | reco::Track   | works  |
-| hltIterL3Muons                          | reco::Muon    | N/A    |
-| hltIterL3MuonsNoID                      | reco::Muon    | N/A    |
-| hltIterL3MuonAndMuonFromL1Merged        | not requested | N/A    |
+| Collection                              | Type          | Validation status |
+| :-------------------------------------- |:-------------:|:-----------------:|
+| hltIterL3GlbMuon                        | reco::Track   | works             |
+| hltIterL3MuonMerged                     | reco::Track   | works             |
+| hltIterL3OIMuonTrackSelectionHighPurity | reco::Track   | works             |
+| hltIterL3Muons                          | reco::Muon    | N/A               |
+| hltIterL3MuonsNoID                      | reco::Muon    | N/A               |
+| hltIterL3MuonAndMuonFromL1Merged        | not requested | N/A               |
