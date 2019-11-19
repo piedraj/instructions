@@ -164,7 +164,7 @@ Edit these two files and compare with the originals.
     
 # Open issue
 
-**November 19th 2019.** We haven't yet managed to get validation distributions for the six requested collections. As one can see in the table below, we are getting meaningful distributions for the `reco::Track` collections but not for the `reco::Muon` collections, in the [upgrade2018](https://cms-muonpog.web.cern.ch/cms-muonpog/Validation/CMSSW_10_6_0_pre4/106X_upgrade2018_realistic_v4_PU25ns/RelValTTbar_13/) validation. Notice that the [MuonAssociatorByHits](https://github.com/cms-sw/cmssw/blob/master/SimMuon/MCTruth/plugins/MuonAssociatorEDProducer.cc#L16) is asking for a `reco::Track` collection. To check the `FEVTDEBUGHLT` event content (the one used in DQM) we have taken a `RelVarTTbar` file.
+**November 19th 2019.** We haven't yet managed to get validation distributions for the six requested collections. As one can see in the table below, we are getting meaningful distributions for the `reco::Track` collections but not for the [`reco::Muon`](https://github.com/cms-sw/cmssw/blob/master/DataFormats/MuonReco/interface/Muon.h) collections, in the [upgrade2018](https://cms-muonpog.web.cern.ch/cms-muonpog/Validation/CMSSW_10_6_0_pre4/106X_upgrade2018_realistic_v4_PU25ns/RelValTTbar_13/) validation. Notice that the [MuonAssociatorByHits](https://github.com/cms-sw/cmssw/blob/master/SimMuon/MCTruth/plugins/MuonAssociatorEDProducer.cc#L16) is asking for a `reco::Track` collection. To check the `FEVTDEBUGHLT` event content (the one used in DQM) we have taken a `RelVarTTbar` file.
 
     edmDumpEventContent /eos/cms/store/relval/CMSSW_10_6_4_patch1/RelValTTbar_13UP18/FEVTDEBUGHLT/PUpmx25ns_106X_upgrade2018_realistic_v10-v1/10000/6AAD1878-D25B-9F4F-88CE-37FC07EB7219.root
 
