@@ -160,4 +160,15 @@ Edit these two files and compare with the originals.
 
     diff associators_cff.py ~calderon/public/for_Cedric/associators_cff.py
     diff muonValidationHLT_cff.py ~calderon/public/for_Cedric/muonValidationHLT_cff.py
+    
+    
+# Open issue
 
+**November 19th, 2019.** We haven't yet managed to get validation distributions for all the six requested collections. As one can see in this [upgrade2018 validation](https://cms-muonpog.web.cern.ch/cms-muonpog/Validation/CMSSW_10_6_0_pre4/106X_upgrade2018_realistic_v4_PU25ns/RelValTTbar_13/) we are getting validation distributions for the `reco::Track`collections but not for the `reco::Muon`collections. Notice that the [MuonAssociatorByHits](https://github.com/cms-sw/cmssw/blob/master/SimMuon/MCTruth/plugins/MuonAssociatorEDProducer.cc#L16) is asking for a `reco::Track` collection.
+
+| hltIterL3GlbMuon                         | reco::Track               | works  |
+| hltIterL3MuonMerged                      | reco::Track               | works  |
+| hltIterL3OIMuonTrackSelectionHighPurity  | reco::Track               | works  |
+| hltIterL3Muons                           | reco::Muon                | N/A    |
+| hltIterL3MuonsNoID                       | reco::Muon                | N/A    |
+| hltIterL3MuonAndMuonFromL1Merged         | N/A in HLT event content  | N/A    |
