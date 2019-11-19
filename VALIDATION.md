@@ -166,6 +166,8 @@ Edit these two files and compare with the originals.
 
 **November 19th, 2019.** We haven't yet managed to get validation distributions for all the six requested collections. As one can see in this [upgrade2018 validation](https://cms-muonpog.web.cern.ch/cms-muonpog/Validation/CMSSW_10_6_0_pre4/106X_upgrade2018_realistic_v4_PU25ns/RelValTTbar_13/) we are getting validation distributions for the `reco::Track`collections but not for the `reco::Muon`collections. Notice that the [MuonAssociatorByHits](https://github.com/cms-sw/cmssw/blob/master/SimMuon/MCTruth/plugins/MuonAssociatorEDProducer.cc#L16) is asking for a `reco::Track` collection.
 
+| collection                         | type               | status  |
+| ------------- |:-------------:| -----:|
 | hltIterL3GlbMuon                         | reco::Track               | works  |
 | hltIterL3MuonMerged                      | reco::Track               | works  |
 | hltIterL3OIMuonTrackSelectionHighPurity  | reco::Track               | works  |
