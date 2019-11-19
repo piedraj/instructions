@@ -170,9 +170,9 @@ Edit these two files and compare with the originals.
 
 | Collection                              | Type          | Validation status |
 | :-------------------------------------- |:-------------:|:-----------------:|
-| hltIterL3GlbMuon                        | reco::Track   | works             |
-| hltIterL3MuonMerged                     | reco::Track   | works             |
-| hltIterL3OIMuonTrackSelectionHighPurity | reco::Track   | works             |
-| hltIterL3Muons                          | reco::Muon    | N/A               |
-| hltIterL3MuonsNoID                      | reco::Muon    | N/A               |
-| hltIterL3MuonAndMuonFromL1Merged        | not requested | N/A               |
+| hltIterL3GlbMuon                        | reco::Track   | [works](https://cms-muonpog.web.cern.ch/cms-muonpog/Validation/CMSSW_10_6_0_pre4/106X_upgrade2018_realistic_v4_PU25ns/RelValTTbar_13/hltIterL3GlbMuon/) |
+| hltIterL3MuonMerged                     | reco::Track   | [works](https://cms-muonpog.web.cern.ch/cms-muonpog/Validation/CMSSW_10_6_0_pre4/106X_upgrade2018_realistic_v4_PU25ns/RelValTTbar_13/hltIterL3MuonMerged/) |
+| hltIterL3OIMuonTrackSelectionHighPurity | reco::Track   | [works](https://cms-muonpog.web.cern.ch/cms-muonpog/Validation/CMSSW_10_6_0_pre4/106X_upgrade2018_realistic_v4_PU25ns/RelValTTbar_13/hltIterL3OIMuonTrackSelectionHighPurity/)             |
+| hltIterL3Muons                          | reco::Muon    | [N/A](https://cms-muonpog.web.cern.ch/cms-muonpog/Validation/CMSSW_10_6_0_pre4/106X_upgrade2018_realistic_v4_PU25ns/RelValTTbar_13/hltIterL3Muons/) |
+| hltIterL3MuonsNoID                      | reco::Muon    | [N/A](https://cms-muonpog.web.cern.ch/cms-muonpog/Validation/CMSSW_10_6_0_pre4/106X_upgrade2018_realistic_v4_PU25ns/RelValTTbar_13/hltIterL3MuonsNoID/) |
+| hltIterL3MuonAndMuonFromL1Merged        | not requested | [N/A](https://cms-muonpog.web.cern.ch/cms-muonpog/Validation/CMSSW_10_6_0_pre4/106X_upgrade2018_realistic_v4_PU25ns/RelValTTbar_13/hltIterL3MuonAndMuonFromL1Merged/) |
