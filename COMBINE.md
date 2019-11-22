@@ -40,8 +40,8 @@ Follow the instructions documented in [COMBINE_SETUP_SLC7](https://github.com/pi
 
 # Fixed signal strength
 
-    combineTool.py -M Impacts --expectSignal=1 -d datacards/datacard_combined.root -m 125 -t -1 --doInitialFit --robustFit 1
-    combineTool.py -M Impacts --expectSignal=1 -d datacards/datacard_combined.root -m 125 -t -1 --doFits --robustFit 1
+    combineTool.py -M Impacts --expectSignal=1 -d datacards/datacard_combined.root -m 125 -t -1 --doInitialFit --robustFit 1 --setParameterRanges r=-4,7
+    combineTool.py -M Impacts --expectSignal=1 -d datacards/datacard_combined.root -m 125 -t -1 --doFits --robustFit 1 --setParameterRanges r=-4,7
     combineTool.py -M Impacts --expectSignal=1 -d datacards/datacard_combined.root -m 125 -t -1 -o impacts.json
     plotImpacts.py -i impacts.json -o impacts
 
