@@ -113,8 +113,14 @@ If needed, you can check the (automatically produced) configuration files of all
 If you need to cancel all the submitted jobs,
 
     condor_rm [YourUsername]
-    
 
+
+# Resubmit failed jobs
+
+    cd $HOME/cms/HWW2015/jobs/mkShapes__VH2j_2017
+    for i in *jid; do condor_submit ${i/jid/jds}; done
+    
+    
 # Group (hadd) histograms
 
     mkShapesMulti.py \
