@@ -10,8 +10,8 @@
 
 # Setup a CMSSW release
 
-    cmsrel CMSSW_10_2_15_patch2
-    cd CMSSW_10_2_15_patch2/src
+    cmsrel CMSSW_10_6_4
+    cd CMSSW_10_6_4/src
     cmsenv
 
 
