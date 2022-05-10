@@ -19,7 +19,7 @@ Setup the CMSSW release. The code `nanoFakes.C` fails with (at least) `10_2_0` a
 
     git clone https://github.com/latinos/FakeRateMeasurement
 
-# Get in position
+# Get ready
 
     cd work/fakes/CMSSW_10_1_0/src
     cmsenv
@@ -27,7 +27,7 @@ Setup the CMSSW release. The code `nanoFakes.C` fails with (at least) `10_2_0` a
 
 # Submit jobs
 
-The tight lepton names might differ between 2016, 2017, 2018. Look at them in `nanoFakes.h` before the job submission. Also before submitting, check that the data and MC samples names in `submitJobs.py` match the current production.
+The tight lepton names might differ between 2016, 2017, 2018. Look at them in `nanoFakes.h` before job submission. Also before submitting, check that the data and MC samples names in `submitJobs.py` match the current production.
 
 Submit jobs for 2017 data and MC.
 
@@ -39,7 +39,7 @@ Submit jobs for 2018 data and MC.
     python submitJobs.py -d /eos/cms/store/group/phys_higgs/cmshww/amassiro/HWWNano/Run2018_UL2018_nAODv9_Full2018v9/DATAl1loose2018v9__fakeSel -y 2018
     python submitJobs.py -d /eos/cms/store/group/phys_higgs/cmshww/amassiro/HWWNano/Summer20UL18_106x_nAODv9_Full2018v9/MCl1loose2018v9__fakeSelKinMC/ -y 2018
 
-# Babysitjobs
+# Babysit jobs
 
     condor_q
     condor_q -hold -af HoldReason
@@ -51,11 +51,11 @@ Submit jobs for 2018 data and MC.
     hadd -f -k hadd_wjets.root nanoLatino_WJetsToLNu*.root
     hadd -f -k hadd_zjets.root nanoLatino_DYJetsToLL*.root
 
-2017 data can be hadded in one shot.
+2017 data can be *hadded* in one shot.
 
      hadd -f -k hadd_data.root nanoLatino_*_Run201*.root
 
-For 2018 data there are too many files, and the hadd has to be done in two steps.
+For 2018 data there are too many files, and the `hadd` has to be done in two steps.
 
     hadd -f -k hadd_data_EGamma.root  nanoLatino_EGamma_Run201*.root
     hadd -f -k hadd_data_DoubleMuon.root  nanoLatino_DoubleMuon_Run201*.root
@@ -67,5 +67,5 @@ For 2018 data there are too many files, and the hadd has to be done in two steps
 
 # Some relevant physics
 
-   * The jet pt thresholds for electrons are 35 GeV for 0-jet, 1-jet and 2-jets
-   * The jet pt thresholds for muons: 20 GeV for 0-jet, 25 GeV for 1-jet and 35 GeV for 2-jets
+   * The jet pt thresholds for electrons are 35 GeV for 0-jet, 1-jet and 2-jets.
+   * The jet pt thresholds for muons are 20 GeV for 0-jet, 25 GeV for 1-jet, and 35 GeV for 2-jets.
