@@ -29,12 +29,12 @@ Setup the CMSSW release. The code `nanoFakes.C` fails with (at least) `10_2_0` a
 
 The tight lepton names might differ between 2016, 2017, 2018. Look at them in `nanoFakes.h` before any job submission. Also before submitting, check that the data and MC samples names in `submitJobs.py` match the current production.
 
-### Submit jobs for 2017 data and MC.
+### Submit jobs for 2017
 
     python submitJobs.py -d /eos/cms/store/group/phys_higgs/cmshww/amassiro/HWWNano/Run2017_UL2017_nAODv9_Full2017v9/DATAl1loose2017v9__fakeSel/ -y 2017
     python submitJobs.py -d /eos/cms/store/group/phys_higgs/cmshww/amassiro/HWWNano/Summer20UL17_106x_nAODv9_Full2017v9/MCl1loose2017v9__fakeSelKinMC/ -y 2017
 
-### Submit jobs for 2018 data and MC.
+### Submit jobs for 2018
 
     python submitJobs.py -d /eos/cms/store/group/phys_higgs/cmshww/amassiro/HWWNano/Run2018_UL2018_nAODv9_Full2018v9/DATAl1loose2018v9__fakeSel -y 2018
     python submitJobs.py -d /eos/cms/store/group/phys_higgs/cmshww/amassiro/HWWNano/Summer20UL18_106x_nAODv9_Full2018v9/MCl1loose2018v9__fakeSelKinMC/ -y 2018
