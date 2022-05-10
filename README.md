@@ -20,9 +20,9 @@ Steps performed running combine on 2016, 2017 and 2018 data with the Latino fram
 
 Work performed with the Delphes framework.
 
-## MCPRODUCTION
+## FAKES
 
-Very preliminary set of instructions for MC production.
+Install and run the nominal fakes for the Latino framework.
 
 ## NANOLATINO
 
@@ -38,4 +38,4 @@ Main ingredients of the Latino postprocessing instructions.
 
 ## VALIDATION
 
-Work in progress with the Muon Validation.
+Work performed in 2019 with the Muon Validation.
