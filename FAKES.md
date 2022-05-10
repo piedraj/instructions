@@ -51,7 +51,7 @@ Submit jobs for 2018 data and MC.
     hadd -f -k hadd_wjets.root nanoLatino_WJetsToLNu*.root
     hadd -f -k hadd_zjets.root nanoLatino_DYJetsToLL*.root
 
-2017 data can be *hadded* in one shot.
+2017 data can be "hadded" in one shot.
 
      hadd -f -k hadd_data.root nanoLatino_*_Run201*.root
 
