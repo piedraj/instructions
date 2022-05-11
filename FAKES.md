@@ -48,22 +48,40 @@ The tight lepton names might differ between 2016, 2017, 2018. Look at them in `n
 
     cd results
 
+### 2017
+
     hadd -f -k hadd_wjets.root nanoLatino_WJetsToLNu*.root
     hadd -f -k hadd_zjets.root nanoLatino_DYJetsToLL*.root
 
 2017 data can be "hadded" in one shot.
 
-     hadd -f -k hadd_data.root nanoLatino_*_Run201*.root
+    hadd -f -k hadd_data.root nanoLatino_*_Run201*.root
+
+    mkdir 2017
+    mv *.root 2017/.
+
+### 2018
+
+    hadd -f -k hadd_wjets.root nanoLatino_WJetsToLNu*.root
+    hadd -f -k hadd_zjets.root nanoLatino_DYJetsToLL*.root
 
 For 2018 data there are too many files, and the `hadd` has to be done in two steps.
 
-    hadd -f -k hadd_data_EGamma.root  nanoLatino_EGamma_Run201*.root
-    hadd -f -k hadd_data_DoubleMuon.root  nanoLatino_DoubleMuon_Run201*.root
+    hadd -f -k hadd_data_EGamma.root nanoLatino_EGamma_Run201*.root
+    hadd -f -k hadd_data_DoubleMuon.root nanoLatino_DoubleMuon_Run201*.root
 
     hadd -f -k hadd_data.root hadd_data_EGamma.root hadd_data_DoubleMuon.root
 
     rm hadd_data_EGamma.root
     rm hadd_data_DoubleMuon.root
+
+    mkdir 2018
+    mv *.root 2018/.
+
+# Extract the fake and prompt rates
+
+    root -l -b -q getFakeRate.C\(2017\)
+    root -l -b -q getFakeRate.C\(2018\)
 
 # Some relevant physics
 
