@@ -72,4 +72,4 @@ The physics behind this exercise, together with an introduction of some high ene
 
 # Credit
 
-All the components of this exercise have been developed by Alicia Calderon.
+All the components of this exercise have been developed by **Alicia Calderón**.
