@@ -62,4 +62,4 @@ Jonatan's laptop.
 
 # CMS practical exercise
 
-The physics behind this exercise, together with an introduction of high energy concepts such as purity or trigger efficiencies, are presented in [CMS practical exercise.pdf](CMS practical exercise.pdf). The code used to produce histograms is also briefly explained here.
+The physics behind this exercise, together with an introduction of high energy concepts such as purity or trigger efficiencies, are presented in [CMS practical exercise.pdf](https://github.com/piedraj/instructions/blob/master/CMS practical exercise.pdf). The code used to produce histograms is also briefly explained here.
