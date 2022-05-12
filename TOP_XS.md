@@ -1,5 +1,3 @@
-Author: A. Calderon
-
 # Introduction
 
 The goal of this exercise is to get acquainted with a particle physics measurement, analyzing proton-proton collisions produced by the Large Hadron Collider (LHC) and recorded by the Compact Muon Solenoid (CMS) experiment.
@@ -10,43 +8,41 @@ The measurement to be performed is the top quark pair production cross section i
 
 # Technical part
 
-The measurement is performed in the *Ubuntu operating system* using the [ROOT](https://root.cern/) data analysis framework developed at CERN. To work in the Ubuntu operating system using ROOT regardless of your operating system (such as macOS or Windows) we will work with [Docker](https://www.docker.com/) [containers](https://www.docker.com/resources/what-container/). A container is a standard unit of software that packages up code and all its dependencies so the application runs quickly and reliably from one computing environment to another. A Docker container image is a lightweight, standalone, executable package of software that includes everything needed to run an application: code, runtime, system tools, system libraries and settings.
+The measurement is performed in the **Ubuntu operating system** using the [ROOT](https://root.cern/) data analysis framework developed at CERN. To work in the Ubuntu operating system using ROOT regardless of your operating system (such as macOS or Windows) we will work with [Docker containers](https://www.docker.com/resources/what-container/). A container is a standard unit of software that packages up code and all its dependencies so the application runs quickly and reliably from one computing environment to another. A Docker container image is a lightweight, standalone, executable package of software that includes everything needed to run an application: code, runtime, system tools, system libraries and settings.
 
 # Framework setup
 
-0. If you're using macOS you need to install XQuartz.
+Install XQuartz. **[macOS]**
 
     https://www.xquartz.org/
 
-1. Install Docker Desktop.
+Install Docker Desktop.
 
     https://www.docker.com/get-started/
 
-2. Download the ROOT Ubuntu image from Docker Hub.
+Download the ROOT Ubuntu image from Docker Hub.
 
     docker pull calderona/root-ubuntu16
 
-3. Check your Docker images.
+Check your Docker images.
 
     docker images
 
-4. If you want to delete some image.
+If you want to delete some image.
 
     docker rmi calderona/root-ubuntu16
 
-5. Needed for display in macOS.
+Needed for display. **[macOS]**
 
     ip=$(ifconfig en0 | grep inet | awk '$1=="inet" {print $2}')
     export DISPLAY=:0
    /opt/X11/bin/xhost + $ip
 
-7. Download the HEPAnalysis code.
-
-In Ubuntu.
+Download the HEPAnalysis code. **[Unix]**
 
     wget https://calderon.web.cern.ch/calderon/codes/HEPAnalysis.tgz
 
-In macOS.
+Download the HEPAnalysis code. **[macOS]**
 
     curl -L https://calderon.web.cern.ch/calderon/codes/HEPAnalysis.tgz > HEPAnalysis.tgz
 
@@ -54,9 +50,9 @@ Extract the HEPAnalysis code.
 
     tar -xvzf HEPAnalysis.tgz
 
-8. Run the Docker image.
+Run the Docker image.
 
-By doing the following, userhome will point to $FULLPATH/HepAnalysis.
+`userhome` will point to $FULLPATH/HepAnalysis.
 
     docker run --rm -it -v $FULLPATH/HEPAnalysis/:/userhome -v /tmp/.X11-unix:/tmp/.X11-unix -e DISPLAY=$ip:0 calderona/root-ubuntu16 bash
 
