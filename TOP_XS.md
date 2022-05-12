@@ -59,3 +59,7 @@ Run the Docker image.
 Jonatan's laptop.
 
     docker run --rm -it -v /Users/Pandora/HEPAnalysis/:/userhome -v /tmp/.X11-unix:/tmp/.X11-unix -e DISPLAY=$ip:0 calderona/root-ubuntu16 bash
+
+# CMS practical exercise
+
+The physics behind this exercise, together with an introduction of high energy concepts such as purity or trigger efficiencies, are presented in [CMS practical exercise.pdf](CMS practical exercise.pdf). The code used to produce histograms is also briefly explained here.
