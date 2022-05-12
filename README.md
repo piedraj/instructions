@@ -36,6 +36,10 @@ How to produce Latino distributions from scratch.
 
 Main ingredients of the Latino postprocessing instructions.
 
+## TOP_XS
+
+Instructions to perform a CMS exercise about the top quark pair production.
+
 ## VALIDATION
 
 Work performed in 2019 with the Muon Validation.
