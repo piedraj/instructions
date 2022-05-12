@@ -69,3 +69,7 @@ The physics behind this exercise, together with an introduction of some high ene
 0. Read [CMS.pdf](https://github.com/piedraj/instructions/blob/master/CMS.pdf).
 1. Execute the provided code out-of-the-box and look at the produced histograms.
 2. Open the provided code and modify it to produce an additional histogram.
+
+# Credit
+
+All the components of this exercise have been developed by Alicia Calderon.
