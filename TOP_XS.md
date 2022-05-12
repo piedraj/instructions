@@ -4,11 +4,11 @@ The goal of this exercise is to get acquainted with a particle physics measureme
 
 # Physics
 
-The measurement to be performed is the top quark pair production cross section in proton-proton collisions at the CMS experiment. A suggested reference is this [CMS paper at 8 TeV](https://link.springer.com/article/10.1007/JHEP02(2014)024).
+The measurement to be performed is the top quark pair production cross section in proton-proton collisions at the CMS experiment. A recommended reading is this [CMS paper at 8 TeV](https://link.springer.com/article/10.1007/JHEP02(2014)024).
 
 # Technical part
 
-The measurement is performed in the **Ubuntu operating system** using the [ROOT](https://root.cern/) data analysis framework developed at CERN. To work in the Ubuntu operating system using ROOT regardless of your operating system (such as macOS or Windows) we will work with [Docker containers](https://www.docker.com/resources/what-container/). A container is a standard unit of software that packages up code and all its dependencies so the application runs quickly and reliably from one computing environment to another. A Docker container image is a lightweight, standalone, executable package of software that includes everything needed to run an application: code, runtime, system tools, system libraries and settings.
+The code is executed in the **Ubuntu operating system** using the [ROOT](https://root.cern/) data analysis framework developed at CERN. To work in the Ubuntu operating system using ROOT regardless of your operating system (such as macOS or Windows) we will work with [Docker containers](https://www.docker.com/resources/what-container/). A container is a standard unit of software that packages up code and all its dependencies so the application runs quickly and reliably from one computing environment to another. A Docker container image is a lightweight, standalone, executable package of software that includes everything needed to run an application: code, runtime, system tools, system libraries and settings.
 
 # Framework setup
 
@@ -62,7 +62,7 @@ Jonatan's laptop.
 
 # CMS practical exercise
 
-The physics behind this exercise, together with an introduction of high energy concepts such as purity or trigger efficiencies, are presented in [CMS.pdf](https://github.com/piedraj/instructions/blob/master/CMS.pdf). The code used to produce histograms is also briefly explained here.
+The physics behind this exercise, together with an introduction of some high energy concepts such as purity or trigger efficiencies, are presented in [CMS.pdf](https://github.com/piedraj/instructions/blob/master/CMS.pdf). The provided HEPAnalysis code is also briefly explained here.
 
 # Your turn
 
