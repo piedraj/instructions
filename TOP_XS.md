@@ -36,7 +36,7 @@ Needed for display. **[macOS]**
 
     ip=$(ifconfig en0 | grep inet | awk '$1=="inet" {print $2}')
     export DISPLAY=:0
-   /opt/X11/bin/xhost + $ip
+    /opt/X11/bin/xhost + $ip
 
 Download the HEPAnalysis code. **[Unix]**
 
