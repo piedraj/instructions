@@ -1,6 +1,6 @@
 # Introduction
 
-The goal of this exercise is to get acquainted with a particle physics measurement, analyzing proton-proton collisions produced by the Large Hadron Collider (LHC) and recorded by the Compact Muon Solenoid (CMS) experiment.
+The goal of this exercise is to get acquainted with a particle physics measurement, analyzing proton-proton collisions produced by the Large Hadron Collider ([LHC](https://www.lhc-closer.es/)) and recorded by the Compact Muon Solenoid (CMS) experiment.
 
 # Physics
 
