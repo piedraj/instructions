@@ -8,13 +8,13 @@ This is my collection of not-so-random instructions. Contributions are always we
 
 Instructions to install and use the CMS tool for luminosity. 
 
-## COMBINE_SETUP
+## COMBINE_SETUP_SLC7
 
-Instructions to setup combine for SLC6 or SLC7.
+Instructions to setup combine for SLC7.
 
 ## COMBINE
 
-Steps performed running combine on 2016, 2017 and 2018 data with the Latino framework.
+Steps performed running `combine` on 2016, 2017 and 2018 data with the Latino framework.
 
 ## DELPHES
 
@@ -22,7 +22,7 @@ Work performed with the Delphes framework.
 
 ## FAKES
 
-Install and run the nominal fakes for the Latino framework.
+Instructions to install and run the nominal fakes for the Latino framework.
 
 ## NANOLATINO
 
