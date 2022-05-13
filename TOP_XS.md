@@ -72,4 +72,4 @@ The physics behind this exercise, together with an introduction of some high ene
 
 # Credit
 
-This exercise has been developed by **Alicia Calderón**, based on a [CMS HEP tutorial](https://ippog-static.web.cern.ch/ippog-static/resources/2012/cms-hep-tutorial.html) by the International Particle Physics Outreach Group (IPPOG). The data provided for the analysis is CMS [open data](https://opendata.cern.ch/).
+This exercise has been developed by **Alicia Calderón** based on a [CMS HEP tutorial](https://ippog-static.web.cern.ch/ippog-static/resources/2012/cms-hep-tutorial.html) by the International Particle Physics Outreach Group (IPPOG). The data provided for the analysis is CMS [open data](https://opendata.cern.ch/).
