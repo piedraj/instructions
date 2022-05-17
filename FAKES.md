@@ -83,6 +83,22 @@ For 2018 data there are too many files, and the `hadd` has to be done in two ste
     root -l -b -q getFakeRate.C\(2017\)
     root -l -b -q getFakeRate.C\(2018\)
 
+# Share on the web
+
+    mkdir /afs/cern.ch/user/p/piedra/www/fakes
+
+    cp -r png/2017 /afs/cern.ch/user/p/piedra/www/fakes/.
+    cp -r png/2018 /afs/cern.ch/user/p/piedra/www/fakes/.
+
+    pushd /afs/cern.ch/user/p/piedra/www/fakes
+    cp ../index.php .
+    find . -type d -exec cp index.php {} \;
+    popd
+
+And the results should appear here,
+
+    https://piedra.web.cern.ch/piedra/fakes/
+
 # Some relevant physics
 
    * The jet pt thresholds for electrons are 35 GeV for 0-jet, 1-jet and 2-jets.
