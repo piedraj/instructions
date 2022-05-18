@@ -25,9 +25,15 @@ Setup the CMSSW release. The code `nanoFakes.C` fails with (at least) `10_2_0` a
     cmsenv
     cd FakeRateMeasurement
 
-# Submit jobs
+# Check before job submission
 
-The tight lepton names might differ between 2016, 2017, 2018. Look at them in `nanoFakes.h` before any job submission. Also before submitting, check that the data and MC samples names in `submitJobs.py` match the current production.
+Check (and edit if needed) the following files.
+
+   * `nanoFakes.h` contains the tight lepton names. They might differ between 2016, 2017, 2018.
+   * `nanoFakes.C` contains the triggers and the corresponding prescales. Edit this file if, for example, you need to move from Ele12 to Ele8.
+   * `submitJobs.py` contains the data and MC samples names. Verify that they match the current production.
+
+# Submit jobs
 
 ### 2017
 
