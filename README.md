@@ -20,10 +20,6 @@ Steps performed running `combine` on 2016, 2017 and 2018 data with the Latino fr
 
 Work performed with the Delphes framework.
 
-## FAKES
-
-Instructions to install and run the nominal fakes for the Latino framework.
-
 ## NANOLATINO
 
 Tests performed with nanoLatino trees.
