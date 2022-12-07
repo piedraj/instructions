@@ -12,6 +12,8 @@ The code is executed in the **Ubuntu operating system** using the [ROOT](https:/
 
 # Framework setup
 
+The setup below is valid for **macOS** and **Unix**. To proceed with **Windows** please follow the [TOP_XS_Windows.pdf](https://github.com/piedraj/instructions/blob/master/TOP_XS_Windows.pdf) instructions.
+
 Install XQuartz. **[macOS]**
 
     https://www.xquartz.org/
