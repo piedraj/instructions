@@ -10,6 +10,7 @@
 
 # Setup a CMSSW release
 
+    export SCRAM_ARCH=slc7_amd64_gcc700
     cmsrel CMSSW_10_6_4
     cd CMSSW_10_6_4/src
     cmsenv
