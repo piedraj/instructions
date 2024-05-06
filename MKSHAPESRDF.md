@@ -1,7 +1,7 @@
 # Documentation
 
 * [mkShapesRDF](https://mkshapesrdf.readthedocs.io/en/latest/)
-* [ROOT RDataFrame Class Reference](https://root.cern/doc/master/classROOT_1_1RDataFrame.html)
+* [ROOT RDataFrame class reference](https://root.cern/doc/master/classROOT_1_1RDataFrame.html)
 * [HTCondor batch system](https://twiki.cern.ch/twiki/bin/view/ABPComputing/LxbatchHTCondor)
 * [Condor commands](https://twiki.cern.ch/twiki/bin/view/CENF/NeutrinoClusterCondorDoc)
 * [PyROOT tutorials](https://root.cern.ch/doc/master/group__tutorial__pyroot.html)
