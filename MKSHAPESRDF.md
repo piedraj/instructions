@@ -5,7 +5,7 @@ The mkShapesRDF documentation can be found [here](https://mkshapesrdf.readthedoc
     ssh -Y piedra@lxplus9.cern.ch -o ServerAliveInterval=240
     bash -l
 
-# Git clone the project
+# Clone the project
 
     mkdir work
     cd work
