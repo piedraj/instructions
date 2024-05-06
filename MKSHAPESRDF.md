@@ -20,7 +20,7 @@ First you need to modify 'install.sh'.
 
     emacs -nw install.sh
 
-Add the following line before 'pip install -e .[docs,dev]
+Add the following line before `pip install -e .[docs,dev]`.
 
     unset SSH_ASKPASS
 
@@ -28,12 +28,12 @@ Do the installation.
 
     ./install.sh
 
-Set your 'eosTmpWorkDir'.
+Set your `eosTmpWorkDir`.
 
     pushd mkShapesRDF/processor/framework
     emacs -nw Sites_cfg.py
 
-Set 'eosTmpWorkDir' as '/eos/home-p/piedra/work/LatinosPostProcessing'. Instead of '/home-p/piedra' write your home path.
+Set `eosTmpWorkDir` as `/eos/home-p/piedra/work/LatinosPostProcessing`. Instead of '/home-p/piedra' write your home path.
 
     source start.sh
     voms-proxy-init -voms cms -rfc --valid 168:0
