@@ -54,29 +54,12 @@ The script `start.sh` has to be run everytime to activate the environment.
 
 # Do the work
 
-Compile.
-
-    mkShapesRDF --compile 1
-
-Run on local.
-
-    mkShapesRDF --operationMode 0 --folder . --doBatch 0 --limitEvents 10
-
-Run on batch.
-    
-    mkShapesRDF --operationMode 0 --folder . --doBatch 1
-
-Check if there are filled jobs.
-
-    mkShapesRDF --operationMode 1 --folder .
-
-Resubmit jobs.
-
-    mkShapesRDF --operationMode 1 --folder . --resubmit 1
-
-Merge all root files. 
-
-    mkShapesRDF --operationMode 2 --folder .
+| Compile           | `mkShapesRDF --compile 1`                                               |
+| Run on local      | `mkShapesRDF --operationMode 0 --folder . --doBatch 0 --limitEvents 10` |
+| Run on batch      | `mkShapesRDF --operationMode 0 --folder . --doBatch 1`                  |
+| Check filled jobs | `mkShapesRDF --operationMode 1 --folder .`                              |
+| Resubmit jobs     | `mkShapesRDF --operationMode 1 --folder . --resubmit 1`                 |
+| Merge root files  | `mkShapesRDF --operationMode 2 --folder .`                              |
 
 # Do the plots
 
