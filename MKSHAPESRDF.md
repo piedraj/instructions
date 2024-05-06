@@ -34,6 +34,7 @@ Set your `eosTmpWorkDir`.
 
 Set `eosTmpWorkDir` as `/eos/home-p/piedra/work/LatinosPostProcessing`. Instead of '/home-p/piedra' write your home path.
 
+    popd
     source start.sh
     voms-proxy-init -voms cms -rfc --valid 168:0
 
