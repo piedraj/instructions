@@ -33,7 +33,7 @@ The script `start.sh` has to be run everytime to activate the environment.
 
     source start.sh
 
-Produce a valid VOMS proxy
+# Produce a valid VOMS proxy
 
     voms-proxy-init -voms cms -rfc --valid 168:0
 
