@@ -17,11 +17,11 @@
 
 # Install the framework
 
-First you need to modify 'install.sh'.
+First you need to modify `install.sh`.
 
     emacs -nw install.sh
 
-Add the following line before `pip install -e .[docs,dev]`.
+Add the following line before `python -m pip install -e ".[docs,dev,processor]"`.
 
     unset SSH_ASKPASS
 
