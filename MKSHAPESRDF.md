@@ -21,7 +21,7 @@ Add the following line right before `python -m pip install -e ".[docs,dev,proces
 
     unset SSH_ASKPASS
 
-Do the installation.
+Now you can do the installation.
 
     ./install.sh
 
