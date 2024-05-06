@@ -27,14 +27,12 @@ Do the installation.
 
     ./install.sh
 
-Set your `eosTmpWorkDir`.
+Set `eosTmpWorkDir` as `/eos/home-p/piedra/work/LatinosPostProcessing` in the file `Sites_cfg.py`. Needless to say, write your home path instead of `/home-p/piedra`.
 
-    pushd mkShapesRDF/processor/framework
-    emacs -nw Sites_cfg.py
+    emacs -nw mkShapesRDF/processor/framework/Sites_cfg.py
 
-Set `eosTmpWorkDir` as `/eos/home-p/piedra/work/LatinosPostProcessing`. Instead of `/home-p/piedra` write your home path.
+aaa.
 
-    popd
     source start.sh
     voms-proxy-init -voms cms -rfc --valid 168:0
 
