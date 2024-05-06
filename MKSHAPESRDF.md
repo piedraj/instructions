@@ -1,6 +1,4 @@
-# Documentation
-
-[mkShapesRDF](https://mkshapesrdf.readthedocs.io/en/latest/)
+The mkShapesRDF documentation can be found [here](https://mkshapesrdf.readthedocs.io/en/latest/).
 
 # Connect to lxplus
 
