@@ -7,8 +7,6 @@ The mkShapesRDF documentation can be found [here](https://mkshapesrdf.readthedoc
 
 # Clone the project
 
-    mkdir work
-    cd work
     git clone https://github.com/BlancoFS/mkShapesRDF.git
     cd mkShapesRDF
     git checkout Run3
