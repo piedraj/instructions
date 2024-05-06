@@ -5,9 +5,6 @@
 # Connect to lxplus
 
     ssh -Y piedra@lxplus9.cern.ch -o ServerAliveInterval=240
-
-# Set the Bash shell
-
     bash -l
 
 # Git clone the project
