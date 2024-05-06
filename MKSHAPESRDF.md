@@ -39,3 +39,7 @@ Set `eosTmpWorkDir` as `/eos/home-p/piedra/work/LatinosPostProcessing`. Instead 
     voms-proxy-init -voms cms -rfc --valid 168:0
 
 # Get the analysis configuration
+
+    git clone https://github.com/calderona/DarkHiggs_RDF
+    cd DarkHiggs_RDF/Full2018_v7/
+    
