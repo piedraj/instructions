@@ -25,7 +25,7 @@ Now you can do the installation.
 
     ./install.sh
 
-Set `eosTmpWorkDir` as `/eos/home-p/piedra/work/LatinosPostProcessing` in `Sites_cfg.py` with your home path instead of `/home-p/piedra`.
+As a next step you need to set `eosTmpWorkDir` as `/eos/home-p/piedra/work/LatinosPostProcessing` in `Sites_cfg.py`. Write your home path instead of `/home-p/piedra`.
 
     emacs -nw mkShapesRDF/processor/framework/Sites_cfg.py
 
