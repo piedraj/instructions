@@ -31,9 +31,12 @@ Set `eosTmpWorkDir` as `/eos/home-p/piedra/work/LatinosPostProcessing` in the fi
 
     emacs -nw mkShapesRDF/processor/framework/Sites_cfg.py
 
-aaa.
+The script `start.sh` has to be run everytime to activate the environment.
 
     source start.sh
+
+Produce a valid VOMS proxy
+
     voms-proxy-init -voms cms -rfc --valid 168:0
 
 # Get the analysis configuration
