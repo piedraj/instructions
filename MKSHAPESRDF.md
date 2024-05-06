@@ -43,4 +43,71 @@ The script `start.sh` has to be run everytime to activate the environment.
 
     git clone https://github.com/calderona/DarkHiggs_RDF
     cd DarkHiggs_RDF/Full2018_v7/
+
+# Do the work
+
+Compile.
+
+    mkShapesRDF -c 1
+
+Run on local.
+
+    mkShapesRDF -o 0 -f . -b 0 -l10
+
+Run on batch (Condor).
     
+    mkShapesRDF -o 0 -f . -b 1
+
+
+Check if there are filled jobs
+
+
+
+
+mkShapesRDF -o 1 -f .
+
+
+Resubmit jobs
+
+
+
+
+mkShapesRDF -o 1 -f . -r 1
+
+
+Merge all root files. 
+
+
+
+
+mkShapesRDF -o 2 -f .
+
+
+
+
+For plotting the variables
+
+
+
+
+
+mkPlot --inputFile rootFiles__darkHiggs2018_v7/mkShapes__darkHiggs2018_v7.root --showIntegralLegend 1
+
+
+ROOT RDataFrame Class Reference
+https://root.cern/doc/master/classROOT_1_1RDataFrame.html
+
+
+HTCONDOR
+https://twiki.cern.ch/twiki/bin/view/ABPComputing/LxbatchHTCondor
+https://twiki.cern.ch/twiki/bin/view/CENF/NeutrinoClusterCondorDoc
+
+PyROOT tutorial
+https://root.cern.ch/doc/master/group__tutorial__pyroot.html
+
+MC numbering scheme
+https://pdg.lbl.gov/2020/reviews/rpp2020-rev-monte-carlo-numbering.pdf
+
+Swan
+https://swan.cern.ch/
+
