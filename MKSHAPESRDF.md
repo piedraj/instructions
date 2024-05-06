@@ -32,7 +32,7 @@ Set your `eosTmpWorkDir`.
     pushd mkShapesRDF/processor/framework
     emacs -nw Sites_cfg.py
 
-Set `eosTmpWorkDir` as `/eos/home-p/piedra/work/LatinosPostProcessing`. Instead of '/home-p/piedra' write your home path.
+Set `eosTmpWorkDir` as `/eos/home-p/piedra/work/LatinosPostProcessing`. Instead of `/home-p/piedra` write your home path.
 
     popd
     source start.sh
