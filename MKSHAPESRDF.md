@@ -19,7 +19,7 @@ First you need to modify `install.sh`.
 
     emacs -nw install.sh
 
-Add the following line before `python -m pip install -e ".[docs,dev,processor]"`.
+Add the following line right before `python -m pip install -e ".[docs,dev,processor]"`.
 
     unset SSH_ASKPASS
 
