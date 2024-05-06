@@ -54,6 +54,8 @@ The script `start.sh` has to be run everytime to activate the environment.
 
 # Do the work
 
+|aaa|bbb|
+|---|---|
 | Compile           | `mkShapesRDF --compile 1`                                               |
 | Run on local      | `mkShapesRDF --operationMode 0 --folder . --doBatch 0 --limitEvents 10` |
 | Run on batch      | `mkShapesRDF --operationMode 0 --folder . --doBatch 1`                  |
