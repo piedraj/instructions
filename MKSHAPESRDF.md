@@ -55,6 +55,7 @@ Everytime you start a new session you need to follow these steps.
     ssh -Y -l <username> lxplus9.cern.ch -o ServerAliveInterval=240
     bash -l
     source start.sh
+    cd mkShapesRDF/DarkHiggs_RDF/Full2018_v7/
 
 *Only necessary if Grid access is needed.* Produce a valid VOMS proxy.
 
