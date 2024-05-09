@@ -33,7 +33,7 @@ Now you can do the installation.
 
     ./install.sh
 
-*Only necessary for batch job submission.* As the next step you need to set `eosTmpWorkDir` as `/eos/home-p/piedra/work/LatinosPostProcessing` in `Sites_cfg.py`. Write your home path instead of `/home-p/piedra`.
+*Only necessary if Grid access is needed.* As the next step you need to set `eosTmpWorkDir` as `/eos/home-p/piedra/work/LatinosPostProcessing` in `Sites_cfg.py`. Write your home path instead of `/home-p/piedra`.
 
     emacs -nw mkShapesRDF/processor/framework/Sites_cfg.py
 
@@ -43,7 +43,7 @@ The script `start.sh` has to be run everytime to activate the environment.
 
 # Produce a valid VOMS proxy
 
-*Only necessary for batch job submission.* 
+*Only necessary if Grid access is needed.* 
 
     voms-proxy-init -voms cms -rfc --valid 168:0
 
