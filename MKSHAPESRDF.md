@@ -39,7 +39,7 @@ Now you can proceed with the installation.
 
     emacs -nw mkShapesRDF/processor/framework/Sites_cfg.py
 
-The script `start.sh` has to be run everytime to activate the environment.
+**The script `start.sh` has to be run everytime to activate the environment.**
 
     source start.sh
 
