@@ -1,4 +1,4 @@
-# Documentation
+# 0. Documentation
 
 * [mkShapesRDF](https://mkshapesrdf.readthedocs.io/en/latest/)
 * [ROOT RDataFrame class reference](https://root.cern/doc/master/classROOT_1_1RDataFrame.html)
@@ -8,20 +8,22 @@
 * [SWAN](https://swan.cern.ch/)
 * [Monte Carlo particle numbering scheme](https://pdg.lbl.gov/2020/reviews/rpp2020-rev-monte-carlo-numbering.pdf)
 
-# Connect to lxplus
+# 1. Everything begins here
+
+Log in to the CERN LXPLUS cluster.
 
     ssh -Y -l <username> lxplus9.cern.ch -o ServerAliveInterval=240
     bash -l
 
-# Clone the project
+# 2. Installation
+
+Clone the project.
 
     git clone https://github.com/BlancoFS/mkShapesRDF.git
     cd mkShapesRDF
     git checkout Run3
 
-# Install the framework
-
-First you need to modify `install.sh`.
+Once you have cloned the project you need to modify `install.sh`.
 
     emacs -nw install.sh
 
@@ -29,7 +31,7 @@ Add the following line right before `python -m pip install -e ".[docs,dev,proces
 
     unset SSH_ASKPASS
 
-Now you can do the installation.
+Now you can proceed with the installation.
 
     ./install.sh
 
@@ -41,18 +43,24 @@ The script `start.sh` has to be run everytime to activate the environment.
 
     source start.sh
 
-# Produce a valid VOMS proxy
-
-*Only necessary if Grid access is needed.* 
-
-    voms-proxy-init -voms cms -rfc --valid 168:0
-
-# Get the analysis configuration
+Get the analysis configuration.
 
     git clone https://github.com/calderona/DarkHiggs_RDF
     cd DarkHiggs_RDF/Full2018_v7/
 
-# Do the work
+# 3. Always do
+
+Everytime you start a new session you need to follow these steps.
+
+    ssh -Y -l <username> lxplus9.cern.ch -o ServerAliveInterval=240
+    bash -l
+    source start.sh
+
+*Only necessary if Grid access is needed.* Produce a valid VOMS proxy.
+
+    voms-proxy-init -voms cms -rfc --valid 168:0
+
+# 4. Do the work
 
 | Action            | Command                                                                 |
 |:------------------|:------------------------------------------------------------------------|
@@ -63,6 +71,6 @@ The script `start.sh` has to be run everytime to activate the environment.
 | Resubmit jobs     | `mkShapesRDF --operationMode 1 --folder . --resubmit 1`                 |
 | Merge root files  | `mkShapesRDF --operationMode 2 --folder .`                              |
 
-# Do the plots
+# 5. Do the plots
 
     mkPlot --inputFile rootFiles__darkHiggs2018_v7/mkShapes__darkHiggs2018_v7.root --showIntegralLegend 1
