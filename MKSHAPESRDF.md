@@ -54,6 +54,7 @@ Everytime you start a new session you need to follow these steps.
 
     ssh -Y -l <username> lxplus9.cern.ch -o ServerAliveInterval=240
     bash -l
+    cd mkShapesRDF
     source start.sh
     cd mkShapesRDF/DarkHiggs_RDF/Full2018_v7/
 
