@@ -56,7 +56,7 @@ Everytime you start a new session you need to follow these steps.
     bash -l
     cd mkShapesRDF
     source start.sh
-    cd mkShapesRDF/DarkHiggs_RDF/Full2018_v7/
+    cd DarkHiggs_RDF/Full2018_v7/
 
 *Only necessary if Grid access is needed.* Produce a valid VOMS proxy.
 
