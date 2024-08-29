@@ -69,9 +69,9 @@ Everytime you start a new session you need to follow these steps.
 | Compilation      | Compile           | `mkShapesRDF --compile 1`                                               |
 | Local (test) run | Run on local      | `mkShapesRDF --operationMode 0 --folder . --doBatch 0 --limitEvents 10` |
 | Batch (full) run | Run on batch      | `mkShapesRDF --operationMode 0 --folder . --doBatch 1`                  |
-| ^                | Check filled jobs | `mkShapesRDF --operationMode 1 --folder .`                              |
-| ^                | Resubmit jobs     | `mkShapesRDF --operationMode 1 --folder . --resubmit 1`                 |
-| ^                | Merge root files  | `mkShapesRDF --operationMode 2 --folder .`                              |
+|^                 | Check filled jobs | `mkShapesRDF --operationMode 1 --folder .`                              |
+|^                 | Resubmit jobs     | `mkShapesRDF --operationMode 1 --folder . --resubmit 1`                 |
+|^                 | Merge root files  | `mkShapesRDF --operationMode 2 --folder .`                              |
 
 # 5. Do the plots
 
