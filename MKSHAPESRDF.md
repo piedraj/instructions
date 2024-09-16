@@ -62,7 +62,7 @@ Everytime you start a new session you need to follow these steps.
 
     voms-proxy-init -voms cms -rfc --valid 168:0
 
-# 4. Do the work
+# 4. Produce the analysis histograms
 
 | Action                        | Command                                                                 |
 |:------------------------------|:------------------------------------------------------------------------|
@@ -74,7 +74,15 @@ Everytime you start a new session you need to follow these steps.
 | Merge root files (batch only) | `mkShapesRDF --operationMode 2 --folder .`                              |
 | Available arguments           | `mkShapesRDF --help`                                                    |
 
-# 5. Do the plots
+# 5. Check job status
+
+    condor_q
+
+If you need to cancel all the submitted jobs.
+
+    condor_rm <username>
+
+# 6. Plot the analysis histograms
 
     mkPlot --inputFile rootFiles__darkHiggs2018_v7/mkShapes__darkHiggs2018_v7.root --showIntegralLegend 1
 
