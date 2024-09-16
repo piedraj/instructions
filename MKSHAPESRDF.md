@@ -72,7 +72,12 @@ Everytime you start a new session you need to follow these steps.
 | Check filled jobs             | `mkShapesRDF --operationMode 1 --folder .`                              |
 | Resubmit jobs                 | `mkShapesRDF --operationMode 1 --folder . --resubmit 1`                 |
 | Merge root files (batch only) | `mkShapesRDF --operationMode 2 --folder .`                              |
+| Available arguments           | `mkShapesRDF --help`                                                    |
 
 # 5. Do the plots
 
     mkPlot --inputFile rootFiles__darkHiggs2018_v7/mkShapes__darkHiggs2018_v7.root --showIntegralLegend 1
+
+If needed, the available arguments can be printed.
+
+    mkPlot --help
