@@ -91,3 +91,5 @@ If you need to cancel all the submitted jobs.
 If needed, the available arguments can be printed.
 
     mkPlot --help
+
+When running on batch check that you have produced exactly [these plots](https://piedra.web.cern.ch/mkshapesrdf-plots/), among others.
