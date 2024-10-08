@@ -74,6 +74,8 @@ Everytime you start a new session you need to follow these steps.
 | Merge root files (batch only) | `mkShapesRDF --operationMode 2 --folder .`                              |
 | Available arguments           | `mkShapesRDF --help`                                                    |
 
+When running on batch check that there are **631 jobs** submitted.
+
 # 5. Check job status
 
     condor_q
