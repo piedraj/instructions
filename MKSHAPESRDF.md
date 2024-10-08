@@ -92,4 +92,4 @@ If needed, the available arguments can be printed.
 
     mkPlot --help
 
-When running on batch check that you have produced exactly [these plots](https://piedra.web.cern.ch/mkshapesrdf-plots/), among others.
+When running on batch check that you have produced these [default plots](https://piedra.web.cern.ch/mkshapesrdf-plots/).
