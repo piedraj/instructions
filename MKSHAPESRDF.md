@@ -91,7 +91,7 @@ If you need to cancel all the submitted jobs.
 
 # 6. Plot the analysis histograms
 
-    mkPlot --inputFile rootFiles__darkHiggs2018_v7/mkShapes__darkHiggs2018_v7.root --showIntegralLegend 1
+    mkPlot --inputFile rootFiles__darkHiggs2018_v7/mkShapes__darkHiggs2018_v7.root --showIntegralLegend 1 --onlyPlot cratio
 
 If needed, the available arguments can be printed.
 
