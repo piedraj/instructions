@@ -74,7 +74,12 @@ Everytime you start a new session you need to follow these steps.
 | Merge root files (batch only) | `mkShapesRDF --operationMode 2 --folder .`                              |
 | Available arguments           | `mkShapesRDF --help`                                                    |
 
-When running on batch check that there are **631 jobs** submitted.
+Always proceed as follows:
+
+1. **Modify the code.** This is where the analaysis development starts.
+2. **Compile.** If you miss this step the implemented changes won't be considered when running the code.
+3. **Run on local.** This is a very important step, as it allows you to check if any error has been introduced with the latest modifications.
+4. **Run on batch.** When running on batch check that there are **631 jobs** submitted.
 
 # 5. Check job status
 
