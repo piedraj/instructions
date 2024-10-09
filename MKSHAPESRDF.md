@@ -13,6 +13,9 @@
 Log in to the CERN LXPLUS cluster.
 
     ssh -Y -l <username> lxplus.cern.ch -o ServerAliveInterval=240
+
+Switch to a [Bash](https://en.wikipedia.org/wiki/Bash_(Unix_shell)) shell.
+    
     bash -l
 
 # 2. Installation
