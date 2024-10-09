@@ -101,8 +101,8 @@ If you need to cancel all the submitted jobs.
     mkPlot --inputFile rootFiles__darkHiggs2018_v7/mkShapes__darkHiggs2018_v7.root \
            --showIntegralLegend 1 \
            --onlyPlot cratio \
-           --fileFormats png \
-           --onlyVariable mll
+           --onlyVariable mll \
+           --fileFormats png
 
 If needed, the available arguments can be printed.
 
