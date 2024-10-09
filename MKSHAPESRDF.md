@@ -35,9 +35,11 @@ Now you can proceed with the installation.
 
     ./install.sh
 
+<!---
 *Only necessary if Grid access is needed.* Set `eosTmpWorkDir` as `/eos/home-p/piedra/work/LatinosPostProcessing` in `Sites_cfg.py`. Write your home path instead of `/home-p/piedra`.
 
     emacs -nw mkShapesRDF/processor/framework/Sites_cfg.py
+-->
 
 The script `start.sh` has to be run everytime to activate the environment.
 
@@ -58,9 +60,11 @@ Everytime you start a new session you need to follow these steps.
     source start.sh
     cd DarkHiggs_RDF/Full2018_v7/
 
+<!---
 *Only necessary if Grid access is needed.* Produce a valid VOMS proxy.
 
     voms-proxy-init -voms cms -rfc --valid 168:0
+-->
 
 # 4. Produce the analysis histograms
 
