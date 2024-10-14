@@ -107,4 +107,4 @@ If needed, the available arguments can be printed.
 
     mkPlot --help
 
-When running on batch check that you have produced these [default distributions](https://piedra.web.cern.ch/mkshapesrdf-plots/).
+When running on batch check that you have produced these [default distributions](https://piedra.web.cern.ch/plots-v7/).
