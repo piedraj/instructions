@@ -16,10 +16,6 @@ Instructions to setup combine for SLC7.
 
 Steps performed running `combine` on 2016, 2017 and 2018 data with the Latino framework.
 
-## DELPHES
-
-Work performed with the Delphes framework.
-
 ## NANOLATINO
 
 Tests performed with nanoLatino trees.
