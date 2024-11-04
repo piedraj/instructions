@@ -7,7 +7,6 @@
     cd work/METSignificance/CMSSW_10_2_18/src
     cmsenv
     scram b -j 8
-    cmsenv
  
 # 2. Get a proxy certificate
 
