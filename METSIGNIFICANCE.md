@@ -29,7 +29,7 @@ Test interactively a sample in `postProcessing_2018_mu_nanoAODv9.sh`.
 
 Submit to condor.
 
-    submitCondor.py --dpm --queue tomorrow --execFile condor.sh postProcessing_2018_mu_nanoAODv9.sh
+    submitCondor.py --dpm --queue tomorrow --execFile condor.sh postProcessing_2018_mu_nanoAODv9.sh --logLevel DEBUG
 
 Location of the condor log files.
 
