@@ -1,6 +1,7 @@
 # 1. Always do
 
     ssh -Y -l piedra lxplus.cern.ch -o ServerAliveInterval=240
+    
     ./start_el7.sh
 
     cd work/METSignificance/CMSSW_10_2_18/src
