@@ -18,11 +18,11 @@ Initialize a CMSSW release.
     cmsrel CMSSW_10_2_18
     cd CMSSW_10_2_18/src/
     cmsenv
-    git cms-init
 
 Clone the needed git repositories.
 
     cd $CMSSW_BASE/src
+    git cms-init
     git clone https://github.com/cesarecazzaniga/nanoMET/
     git clone https://github.com/HephyAnalysisSW/RootTools.git
     git clone https://github.com/HephyAnalysisSW/Samples.git
