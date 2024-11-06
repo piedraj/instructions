@@ -43,10 +43,10 @@ Get the JER files.
 
 Some user specific paths are hardcoded in the nanoMET repository. Edit the `$CMSSW_BASE/src/nanoMET/tools/python/user.py` file and add the paths suited for your setup.
 
-| plot_directory	| Path to store produced plots
-| postprocessing_output_directory	Path to the nanoMET flat ntuples output
-| data_directory	Path to the postprocessed samples
-| dbDir	Path to the used samples database
+| plot_directory	| Path to store produced plots |
+| postprocessing_output_directory	| Path to the nanoMET flat ntuples output |
+| data_directory	| Path to the postprocessed samples |
+| dbDir	| Path to the used samples database |
 
 # 2. Always do
 
