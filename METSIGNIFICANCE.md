@@ -84,6 +84,8 @@ Test interactively a sample in `postProcessing_2018_mu_nanoAODv9.sh`.
 
     python postProcessing_singlemu_new.py --skim singlemu --era v9 --year 2018 --ul --samples DYJetsToLL_M10to50_LO #SPLIT11
 
+![Interactive.png](Images/Interactive.png)
+
 Submit to condor.
 
     submitCondor.py --dpm --queue tomorrow --execFile condor.sh postProcessing_condor_test.sh --logLevel DEBUG
