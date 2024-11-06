@@ -80,15 +80,18 @@ This step should be performed only when a sample has been added.
 
     cd $CMSSW_BASE/src/nanoMET/postprocessing
 
-Test interactively a sample in `postProcessing_2018_mu_nanoAODv9.sh`.
+Test interactively with the `DYJetsToLL_M10to50_LO` sample in `postProcessing_2018_mu_nanoAODv9.sh`.
 
     python postProcessing_singlemu_new.py --skim singlemu --era v9 --year 2018 --ul --samples DYJetsToLL_M10to50_LO #SPLIT11
 
 ![Interactive.png](Images/Interactive.png)
 
-Submit to condor.
+To test the condor submission, copy the file `postProcessing_2018_mu_nanoAODv9.sh` as `postProcessing_condor_test.sh` and keep only the `DYJetsToLL_M10to50_LO` sample.
 
     submitCondor.py --dpm --queue tomorrow --execFile condor.sh postProcessing_condor_test.sh --logLevel DEBUG
+
+Submit to condor.
+    
     submitCondor.py --dpm --queue tomorrow --execFile condor.sh postProcessing_2018_mu_nanoAODv9.sh
 
 Location of the condor log files.
