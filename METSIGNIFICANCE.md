@@ -90,7 +90,7 @@ To test the condor submission copy the file `postProcessing_2018_mu_nanoAODv9.sh
 
     submitCondor.py --dpm --queue tomorrow --execFile condor.sh postProcessing_condor_test.sh --logLevel DEBUG
 
-Submit to condor.
+Submit (all 2018 UL samples) to condor.
     
     submitCondor.py --dpm --queue tomorrow --execFile condor.sh postProcessing_2018_mu_nanoAODv9.sh
 
