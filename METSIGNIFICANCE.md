@@ -67,7 +67,7 @@ Some user specific paths are hardcoded in the nanoMET repository. Edit the `$CMS
  
 # 3. Get a proxy certificate
 
-It is necessary that you provide a full AFS path to your proxy file. Information regarding the proxy settings can be found [here](https://batchdocs.web.cern.ch/tutorial/exercise2e_proxy.html).
+It is necessary that you provide a full AFS path to your proxy file. Information regarding proxy settings can be found [here](https://batchdocs.web.cern.ch/tutorial/exercise2e_proxy.html).
 
     export X509_USER_PROXY=/afs/cern.ch/user/p/piedra/x509up
     voms-proxy-init -voms cms --valid 192:00 --vomslife 192:0
