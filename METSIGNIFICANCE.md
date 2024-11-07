@@ -80,11 +80,9 @@ This step should be performed only when a sample has been added.
 
     cd $CMSSW_BASE/src/nanoMET/postprocessing
 
-Test interactively with the `DYJetsToLL_M10to50_LO` sample in `postProcessing_2018_mu_nanoAODv9.sh`. This is slow, but once you see (at least) two output files in the `postprocessing_output_directory` defined in `$CMSSW_BASE/src/nanoMET/tools/python/user.py` the test can be considered successful.
+Test interactively with the `DYJetsToLL_M10to50_LO` sample in `postProcessing_2018_mu_nanoAODv9.sh`. This is slow, but once you see a file appear in the `postprocessing_output_directory` defined in `$CMSSW_BASE/src/nanoMET/tools/python/user.py` the test can be considered successful.
 
     python postProcessing_singlemu_new.py --skim singlemu --era v9 --year 2018 --ul --samples DYJetsToLL_M10to50_LO #SPLIT11
-
-![Interactive.png](Images/Interactive.png)
 
 To test the condor submission copy the file `postProcessing_2018_mu_nanoAODv9.sh` as `postProcessing_condor_test.sh` and keep only the `DYJetsToLL_M10to50_LO` sample.
 
