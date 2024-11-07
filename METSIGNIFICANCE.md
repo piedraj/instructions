@@ -89,7 +89,7 @@ Test interactively with the `DYJetsToLL_M10to50_LO` sample in `postProcessing_20
 
 To test the condor submission copy the file `postProcessing_2018_mu_nanoAODv9.sh` as `postProcessing_condor_test.sh` and keep only the `DYJetsToLL_M10to50_LO` sample.
 
-    submitCondor.py --dpm --queue tomorrow --execFile condor.sh postProcessing_condor_test.sh --logLevel DEBUG
+    submitCondor.py --dpm --queue tomorrow --execFile condor.sh postProcessing_condor_test.sh
 
 Submit (all 2018 UL samples) to condor.
     
