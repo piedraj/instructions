@@ -67,7 +67,10 @@ Some user specific paths are hardcoded in the nanoMET repository. Edit the `$CMS
  
 # 3. Get a proxy certificate
 
-    voms-proxy-init -voms cms --valid 192:00 --vomslife 192:0
+Set the proxy in an AFS directory to guarantee that the condor jobs see it.
+
+    export X509_USER_PROXY=$HOME/proxy
+    voms-proxy-init -voms cms
 
 # 4. Caching normalization in samples
 
