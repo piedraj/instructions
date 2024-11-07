@@ -87,10 +87,6 @@ Test interactively with the `DYJetsToLL_M10to50_LO` sample in `postProcessing_20
 
     python postProcessing_singlemu_new.py --skim singlemu --era v9 --year 2018 --ul --samples DYJetsToLL_M10to50_LO #SPLIT11
 
-To test the condor submission copy the file `postProcessing_2018_mu_nanoAODv9.sh` as `postProcessing_condor_test.sh` and keep only the `DYJetsToLL_M10to50_LO` sample.
-
-    submitCondor.py --dpm --queue tomorrow --execFile condor.sh postProcessing_condor_test.sh
-
 Submit (all 2018 UL samples) to condor.
     
     submitCondor.py --dpm --queue tomorrow --execFile condor.sh postProcessing_2018_mu_nanoAODv9.sh
