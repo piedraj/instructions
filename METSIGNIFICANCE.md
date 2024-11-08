@@ -74,7 +74,7 @@ It is necessary that you provide a full AFS path to your proxy file. Information
 
 # 4. Caching normalization in samples
 
-This step should be performed only the first time, and when samples have been added.
+This step should be performed the first time and when samples have been added.
 
     python $CMSSW_BASE/src/nanoMET/nanoAOD/python/UL18_nanoAODv9.py
     python $CMSSW_BASE/src/nanoMET/nanoAOD/python/UL18_DATA_nanoAODv9.py
