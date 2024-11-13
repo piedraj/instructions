@@ -99,6 +99,6 @@ Location of the condor log files.
 
     /afs/cern.ch/work/${USER::1}/$USER/condor_output/
 
-My location of the postprocessed files.
+*My* location of the postprocessed files.
 
     /eos/cms/store/group/phys_jetmet/piedra/MET_studies/MET_significance/OUTPUT_DIR/
