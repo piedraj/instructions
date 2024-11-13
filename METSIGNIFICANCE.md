@@ -89,10 +89,6 @@ Test interactively with the `DYJetsToLL_M10to50_LO` sample in `postProcessing_20
 
 Submit to condor.
     
-    submitCondor.py --dpm --queue tomorrow --execFile condor.sh postProcessing_2018_mu_nanoAODv9.sh
-
-Resubmit failed jobs to condor.
-    
     submitCondor.py --dpm --queue tomorrow --execFile condor.sh postProcessing_2018_mu_nanoAODv9.sh --resubmitFailedJobs
 
 Location of the condor log files.
