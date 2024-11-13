@@ -91,7 +91,7 @@ Submit to condor.
     
     submitCondor.py --dpm --queue tomorrow --execFile condor.sh postProcessing_2018_mu_nanoAODv9.sh
 
-Resubmit failed jobs to condor
+Resubmit failed jobs to condor.
     
     submitCondor.py --dpm --queue tomorrow --execFile condor.sh postProcessing_2018_mu_nanoAODv9.sh --resubmitFailedJobs
 
