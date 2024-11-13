@@ -87,10 +87,18 @@ Test interactively with the `DYJetsToLL_M10to50_LO` sample in `postProcessing_20
 
     python postProcessing_singlemu_new.py --skim singlemu --era v9 --year 2018 --ul --samples DYJetsToLL_M10to50_LO #SPLIT11
 
-Submit (all 2018 UL samples) to condor.
+Submit to condor.
     
     submitCondor.py --dpm --queue tomorrow --execFile condor.sh postProcessing_2018_mu_nanoAODv9.sh
+
+Resubmit failed jobs to condor
+    
+    submitCondor.py --dpm --queue tomorrow --execFile condor.sh postProcessing_2018_mu_nanoAODv9.sh --resubmitFailedJobs
 
 Location of the condor log files.
 
     /afs/cern.ch/work/${USER::1}/$USER/condor_output/
+
+My location of the postprocessed files.
+
+    /eos/cms/store/group/phys_jetmet/piedra/MET_studies/MET_significance/OUTPUT_DIR/
