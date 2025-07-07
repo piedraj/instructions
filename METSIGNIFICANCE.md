@@ -25,7 +25,7 @@ Clone the needed git repositories.
 
     cd $CMSSW_BASE/src
     git cms-init
-    git clone https://github.com/cesarecazzaniga/nanoMET
+    git clone -b dimuon_analysis https://github.com/cesarecazzaniga/nanoMET
     git clone https://github.com/HephyAnalysisSW/RootTools.git
     git clone https://github.com/HephyAnalysisSW/Samples.git
 
