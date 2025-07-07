@@ -57,7 +57,7 @@ Some user specific paths are hardcoded in the nanoMET repository. Edit the `$CMS
 
 # 2. Always do
 
-    ssh -Y -l <user> lxplus.cern.ch -o ServerAliveInterval=240
+    ssh -Y -l piedra lxplus.cern.ch -o ServerAliveInterval=240
     
     ./start_el7.sh
 
