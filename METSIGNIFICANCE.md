@@ -91,6 +91,14 @@ Submit to condor.
     
     submitCondor.py --dpm --resubmitFailedJobs --queue tomorrow --execFile condor.sh postProcessing_2018_mumu_nanoAODv9.sh
 
+Check job status.
+
+    condor_q
+
+If you need to cancel all the submitted jobs.
+
+    condor_rm [YourUserName]
+
 Location of the condor log files.
 
     /afs/cern.ch/work/${USER::1}/$USER/condor_output/
