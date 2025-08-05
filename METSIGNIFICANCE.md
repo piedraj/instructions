@@ -89,7 +89,19 @@ Test interactively with the `DYJetsToLL_M10to50_LO` sample in `postProcessing_20
 
 Submit to condor.
     
-    submitCondor.py --dpm --queue tomorrow --execFile condor.sh postProcessing_2018_mumu_nanoAODv9.sh --resubmitFailedJobs
+    submitCondor.py --dpm --queue testmatch --execFile condor.sh postProcessing_2018_mumu_nanoAODv9.sh --resubmitFailedJobs
+
+Jobs can be submitted to different condor queues.
+
+| Queue name   | Queue length |
+|:-------------|:-------------|
+| espresso	   | 20 minutes   |
+| microcentury | 1 hour       |
+| longlunch	   | 2 hours      |
+| workday      | 8 hours      |
+| tomorrow     | 1 day        |
+| testmatch    | 3 days       |
+| nextweek     | 1 week       |
 
 Check job status.
 
