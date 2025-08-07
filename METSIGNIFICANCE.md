@@ -85,7 +85,7 @@ This step should be performed the first time, and anytime one or more samples ha
 
 Test interactively with the `DYJetsToLL_M10to50_LO` sample in `postProcessing_2018_mu_nanoAODv9.sh`. This is slow, but once you see a file appear in the `postprocessing_output_directory` defined in `$CMSSW_BASE/src/nanoMET/tools/python/user.py` the test can be considered successful.
 
-    python postProcessing_singlemu_new.py --skim singlemu --era v9 --year 2018 --ul --samples DYJetsToLL_M10to50_LO #SPLIT11
+    python postProcessing_doublemu_new.py --skim dimuon --era v9 --year 2018 --ul --samples DYJetsToLL_M10to50_LO #SPLIT11
 
 Submit to condor.
     
