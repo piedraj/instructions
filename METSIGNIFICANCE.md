@@ -137,7 +137,7 @@ The tuning parameters for data and MC should apear in the following folder.
 
     $CMSSW_BASE/src/nanoMET/run/results
 
-# 7. Recompute the MET Significance
+# 7. Recomputing the MET Significance
 
     cd $CMSSW_BASE/src/nanoMET/postprocessing
 
