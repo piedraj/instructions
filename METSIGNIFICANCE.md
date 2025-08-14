@@ -128,7 +128,7 @@ Submit to condor.
 
     submitCondor.py --queue tomorrow --execFile condor.sh tune_UL2018_DoubleMuon.sh 
 
-The tuning parameters for data and MC should apear in the following folder.
+The tuning parameters for data and MC should appear in the following folder.
 
     $CMSSW_BASE/src/nanoMET/run/results
 
