@@ -116,9 +116,9 @@ Location of the condor log files.
 
     /afs/cern.ch/work/${USER::1}/$USER/condor_output/
 
-*My* location of the postprocessed files.
+Location of the postprocessed files.
 
-    /eos/cms/store/group/phys_jetmet/piedra/MET_studies/MET_significance/OUTPUT_DIR/
+    /eos/cms/store/group/phys_jetmet/piedra/MET_studies/MET_significance/OUTPUT_DIR/2018_UL_v9/dimuon
 
 # 6. Tuning the MET Significance
 
@@ -144,6 +144,10 @@ The tuning parameters for data and MC should apear in the following folder.
 Copy the data and MC tuning parameters obtained in the previous step in the `tunes_dimuon.py` file. Once the parameters have been copied you can submit to condor the *after tuning* jobs.
 
     submitCondor.py --dpm --queue tomorrow --execFile condor.sh postProcessing_2018_mumu_nanoAODv9_after_tuning.sh
+
+Location of the *after tuning* postprocessed files.
+
+    /eos/cms/store/group/phys_jetmet/piedra/MET_studies/MET_significance/OUTPUT_DIR/2018_UL_v9/dimuon_afterTuning
 
 # 8. Draw
 
