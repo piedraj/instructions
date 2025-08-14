@@ -133,3 +133,18 @@ The tuning of the MET Significance can also be tested interactively for debuggin
     python tune_doublemu.py --addon v9 --year 2018 --ttbarModifier 1 --selection diMuon1718-tuneElectronVeto-onZ --maxSig 25 --jetThreshold 15 --pTdependent #>> /dev/null 2>>tune.err
     python tune_doublemu.py --addon v9 --year 2018 --runData         --selection diMuon1718-tuneElectronVeto-onZ --maxSig 25 --jetThreshold 15 --pTdependent #>> /dev/null 2>>tune.err
 
+The tuning parameters for data and MC should apear in the following folder.
+
+    $CMSSW_BASE/src/nanoMET/run/results
+
+# 7. Recompute the MET Significance
+
+    cd $CMSSW_BASE/src/nanoMET/postprocessing
+
+Copy the data and MC tuning parameters obtained in the previous step in the `tunes_dimuon.py` file. Once the parameters have been copied you can submit to condor the *after tuning* jobs.
+
+    submitCondor.py --dpm --queue tomorrow --execFile condor.sh postProcessing_2018_mumu_nanoAODv9_after_tuning.sh
+
+# 8. Draw
+
+Work in progress.
