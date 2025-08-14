@@ -136,7 +136,7 @@ The tuning parameters for data and MC should appear in the following folder.
 
     cd $CMSSW_BASE/src/nanoMET/postprocessing
 
-Copy the data and MC tuning parameters obtained in the previous step in the `tunes_dimuon.py` file. Once the parameters have been copied you can submit to condor the *after tuning* jobs.
+Copy the data and MC tuning parameters obtained in the previous step in the `tunes_dimuon.py` file. Once the parameters have been copied you can submit the *after tuning* jobs to condor.
 
     submitCondor.py --dpm --queue tomorrow --execFile condor.sh postProcessing_2018_mumu_nanoAODv9_after_tuning.sh
 
