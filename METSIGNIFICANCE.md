@@ -160,6 +160,7 @@ Copy the plots in your EOS `www` location.
 
     mkdir -p /eos/home-p/piedra/www/met-studies
     cd /eos/home-p/piedra/www/met-studies
+    
     cp -r $HOME/MET_studies/MET_significance/PLOT_DIR/analysisPlots/2018/UL_2018_v9_small_tuneDoubleMuALL_UL_2018_v9_norm_sumPt15_pTdep/diMuon-looseLeptonVeto-onZ-noEEJets/mumu/lin .
     cp -r $HOME/MET_studies/MET_significance/PLOT_DIR/analysisPlots/2018/UL_2018_v9_small_tuneDoubleMuALL_UL_2018_v9_norm_sumPt15_pTdep/diMuon-looseLeptonVeto-onZ-noEEJets/mumu/log .
 
