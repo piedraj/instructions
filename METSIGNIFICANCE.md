@@ -153,3 +153,7 @@ Submit to condor.
 Location of the plots as defined in `$CMSSW_BASE/src/nanoMET/tools/python/user.py`.
 
     /afs/cern.ch/user/p/piedra/MET_studies/MET_significance/PLOT_DIR/
+
+# 9. Share on the web
+
+    https://piedra.web.cern.ch/
