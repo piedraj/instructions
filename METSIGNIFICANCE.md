@@ -156,4 +156,20 @@ Location of the plots as defined in `$CMSSW_BASE/src/nanoMET/tools/python/user.p
 
 # 9. Share on the web
 
+Copy the plots in your EOS `www` location.
+
+    cd /eos/home-p/piedra/www
+    mkdir met-studies
+    cd met-studies
+    cp -r $HOME/MET_studies/MET_significance/PLOT_DIR/analysisPlots/2018/UL_2018_v9_small_tuneDoubleMuALL_UL_2018_v9_norm_sumPt15_pTdep/diMuon-looseLeptonVeto-onZ-noEEJets/mumu/lin .
+    cp -r $HOME/MET_studies/MET_significance/PLOT_DIR/analysisPlots/2018/UL_2018_v9_small_tuneDoubleMuALL_UL_2018_v9_norm_sumPt15_pTdep/diMuon-looseLeptonVeto-onZ-noEEJets/mumu/log .
+
+Index the plots, so they can be seen in your webEOS site.
+
+    cd /eos/home-p/piedra/www/met-studies
+    cp ../index.php .
+    find . -type d -exec cp index.php {} \;
+
+_Enjoy_ the plots.
+    
     https://piedra.web.cern.ch/
