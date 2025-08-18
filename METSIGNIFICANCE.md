@@ -146,4 +146,6 @@ Location of the *after tuning* postprocessed files.
 
 # 8. Draw
 
-Work in progress.
+Submit to condor.
+
+    submitCondor.py --execFile condor.sh --queue tomorrow analysisPlots_dimuon.sh
