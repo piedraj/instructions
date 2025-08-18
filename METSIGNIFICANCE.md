@@ -172,4 +172,4 @@ Index the plots, so they can be seen in your webEOS site.
 
 _Enjoy_ the plots.
     
-    https://piedra.web.cern.ch/
+    https://piedra.web.cern.ch/met-studies/
