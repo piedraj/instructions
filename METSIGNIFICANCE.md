@@ -149,3 +149,7 @@ Location of the *after tuning* postprocessed files.
 Submit to condor.
 
     submitCondor.py --execFile condor.sh --queue tomorrow analysisPlots_dimuon.sh
+
+Location of the plots as defined in `$CMSSW_BASE/src/nanoMET/tools/python/user.py`.
+
+    /afs/cern.ch/user/p/piedra/MET_studies/MET_significance/PLOT_DIR/
