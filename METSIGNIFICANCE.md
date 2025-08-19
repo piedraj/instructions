@@ -146,6 +146,8 @@ Location of the *after tuning* postprocessed files.
 
 # 8. Draw
 
+    cd $CMSSW_BASE/src/nanoMET/plots
+
 Submit to condor.
 
     submitCondor.py --execFile condor.sh --queue tomorrow analysisPlots_dimuon.sh
