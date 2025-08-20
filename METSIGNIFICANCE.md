@@ -144,7 +144,7 @@ Location of the *after tuning* postprocessed files.
 
     /eos/cms/store/group/phys_jetmet/piedra/MET_studies/MET_significance/OUTPUT_DIR/2018_UL_v9/dimuon_afterTuning
 
-# 8. Draw
+# 8. Draw analysis and systematics plots
 
     cd $CMSSW_BASE/src/nanoMET/plots
 
