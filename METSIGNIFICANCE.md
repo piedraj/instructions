@@ -171,6 +171,6 @@ Once the plots have been copied index them, so they can be seen in your webEOS s
     cp ../index.php .
     find . -type d -exec cp index.php {} \;
 
-_Enjoy_ the plots.
+Enjoy the plots.
     
     https://piedra.web.cern.ch/met-studies/
