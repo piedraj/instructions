@@ -90,10 +90,10 @@ Test interactively with the `DYJetsToLL_M10to50_LO` sample in `postProcessing_20
 
     python postProcessing_doublemu_new.py --skim dimuon --era v9 --year 2018 --ul --samples DYJetsToLL_M10to50_LO #SPLIT11
 
-Submit to condor.
+Submit to condor. The `--resubmitFailedJobs` can be included to resubmit jobs with nonzero exit code.
     
-    submitCondor.py --dpm --queue tomorrow --execFile condor.sh postProcessing_2017_mumu_nanoAODv9.sh  ## --resubmitFailedJobs
-    submitCondor.py --dpm --queue tomorrow --execFile condor.sh postProcessing_2018_mumu_nanoAODv9.sh  ## --resubmitFailedJobs
+    submitCondor.py --dpm --queue tomorrow --execFile condor.sh postProcessing_2017_mumu_nanoAODv9.sh
+    submitCondor.py --dpm --queue tomorrow --execFile condor.sh postProcessing_2018_mumu_nanoAODv9.sh
 
 Jobs can be submitted to different condor queues.
 
@@ -121,6 +121,7 @@ Location of the condor log files.
 
 Location of the postprocessed files.
 
+    /eos/cms/store/group/phys_jetmet/piedra/MET_studies/MET_significance/OUTPUT_DIR/2017_UL_v9/dimuon
     /eos/cms/store/group/phys_jetmet/piedra/MET_studies/MET_significance/OUTPUT_DIR/2018_UL_v9/dimuon
 
 # 6. Tuning the MET Significance
