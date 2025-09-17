@@ -130,6 +130,7 @@ Location of the postprocessed files.
 
 Submit to condor.
 
+    submitCondor.py --queue tomorrow --execFile condor.sh tune_UL2017_DoubleMuon.sh 
     submitCondor.py --queue tomorrow --execFile condor.sh tune_UL2018_DoubleMuon.sh 
 
 The tuning parameters for data and MC should appear in the following folder.
