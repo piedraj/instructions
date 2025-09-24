@@ -154,6 +154,7 @@ Location of the *after tuning* postprocessed files.
 # 8. Draw analysis and systematics plots
 
     cd $CMSSW_BASE/src/nanoMET/plots
+    cp $CMSSW_BASE/src/nanoMET/postprocessing/tunes_dimuon.py .
 
 Submit to condor.
 
