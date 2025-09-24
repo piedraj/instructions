@@ -171,7 +171,10 @@ Location of the plots as defined in `$CMSSW_BASE/src/nanoMET/tools/python/user.p
 Create a `met-studies` directory in your EOS `www` location, and copy there the plots.
 
     mkdir /eos/home-p/piedra/www/met-studies
-    cp -r SOURCE DEST/.
+    cd /eos/home-p/piedra/www/met-studies
+    
+    cp -r /afs/cern.ch/user/p/piedra/MET_studies/MET_significance/PLOT_DIR/analysisPlots .
+    cp -r /afs/cern.ch/user/p/piedra/MET_studies/MET_significance/PLOT_DIR/systematicsPlots .
     
 Once the plots have been copied index them, so they can be seen in your webEOS site.
 
