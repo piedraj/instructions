@@ -57,6 +57,8 @@ Some user specific paths are hardcoded in the nanoMET repository. Edit the `$CMS
 
 # 1. Always do
 
+It is necessary that you provide a full AFS path to your proxy file. Information regarding proxy settings can be found [here](https://batchdocs.web.cern.ch/tutorial/exercise2e_proxy.html).
+
     ssh -Y -l piedra lxplus.cern.ch -o ServerAliveInterval=240
     
     ./start_el7.sh
@@ -68,8 +70,6 @@ Some user specific paths are hardcoded in the nanoMET repository. Edit the `$CMS
     export X509_USER_PROXY=/afs/cern.ch/work/p/piedra/private/x509up
     voms-proxy-init -voms cms --valid 192:00 --vomslife 192:0
 
-It is necessary that you provide a full AFS path to your proxy file. Information regarding proxy settings can be found [here](https://batchdocs.web.cern.ch/tutorial/exercise2e_proxy.html).
- 
 # 2. Caching normalization in samples
 
 This step should be performed the first time, and anytime one or more samples have been added.
