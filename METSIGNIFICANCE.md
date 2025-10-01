@@ -96,6 +96,8 @@ Test interactively with the `DYJetsToLL_M10to50_LO` sample in `postProcessing_20
 
 Submit to condor. The `--resubmitFailedJobs` can be included to resubmit jobs with nonzero exit code.
     
+    submitCondor.py --dpm --queue tomorrow --execFile condor.sh postProcessing_2016_mumu_nanoAODAPVv9_preVPF.sh
+    submitCondor.py --dpm --queue tomorrow --execFile condor.sh postProcessing_2016_mumu_nanoAODv9_postVPF.sh
     submitCondor.py --dpm --queue tomorrow --execFile condor.sh postProcessing_2017_mumu_nanoAODv9.sh
     submitCondor.py --dpm --queue tomorrow --execFile condor.sh postProcessing_2018_mumu_nanoAODv9.sh
 
