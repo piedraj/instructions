@@ -137,6 +137,7 @@ Location of the postprocessed files.
 
 Submit to condor.
 
+    submitCondor.py --queue tomorrow --execFile condor.sh tune_UL2016_DoubleMuon_preVPF.sh 
     submitCondor.py --queue tomorrow --execFile condor.sh tune_UL2017_DoubleMuon.sh 
     submitCondor.py --queue tomorrow --execFile condor.sh tune_UL2018_DoubleMuon.sh 
 
