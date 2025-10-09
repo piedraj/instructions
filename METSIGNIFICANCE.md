@@ -74,11 +74,11 @@ It is necessary that you provide a full AFS path to your proxy file. Information
 
 This step should be performed the first time, and anytime one or more samples have been added.
 
-    python $CMSSW_BASE/src/nanoMET/nanoAOD/python/UL16_nanoAODAPVv9_preVPF.py
-    python $CMSSW_BASE/src/nanoMET/nanoAOD/python/UL16_DATA_nanoAODAPVv9_preVPF.py
+    python $CMSSW_BASE/src/nanoMET/nanoAOD/python/UL16_nanoAODAPVv9_preVFP.py
+    python $CMSSW_BASE/src/nanoMET/nanoAOD/python/UL16_DATA_nanoAODAPVv9_preVFP.py
 
-    python $CMSSW_BASE/src/nanoMET/nanoAOD/python/UL16_nanoAODv9_postVPF.py
-    python $CMSSW_BASE/src/nanoMET/nanoAOD/python/UL16_DATA_nanoAODv9_postVPF.py
+    python $CMSSW_BASE/src/nanoMET/nanoAOD/python/UL16_nanoAODv9_postVFP.py
+    python $CMSSW_BASE/src/nanoMET/nanoAOD/python/UL16_DATA_nanoAODv9_postVFP.py
 
     python $CMSSW_BASE/src/nanoMET/nanoAOD/python/UL17_nanoAODv9.py
     python $CMSSW_BASE/src/nanoMET/nanoAOD/python/UL17_DATA_nanoAODv9.py
@@ -96,8 +96,8 @@ Test interactively with the `DYJetsToLL_M10to50_LO` sample in `postProcessing_20
 
 Submit to condor. The `--resubmitFailedJobs` can be included to resubmit jobs with nonzero exit code.
     
-    submitCondor.py --dpm --queue tomorrow --execFile condor.sh postProcessing_2016_mumu_nanoAODAPVv9_preVPF.sh
-    submitCondor.py --dpm --queue tomorrow --execFile condor.sh postProcessing_2016_mumu_nanoAODv9_postVPF.sh
+    submitCondor.py --dpm --queue tomorrow --execFile condor.sh postProcessing_2016_mumu_nanoAODAPVv9_preVFP.sh
+    submitCondor.py --dpm --queue tomorrow --execFile condor.sh postProcessing_2016_mumu_nanoAODv9_postVFP.sh
     submitCondor.py --dpm --queue tomorrow --execFile condor.sh postProcessing_2017_mumu_nanoAODv9.sh
     submitCondor.py --dpm --queue tomorrow --execFile condor.sh postProcessing_2018_mumu_nanoAODv9.sh
 
@@ -137,7 +137,7 @@ Location of the postprocessed files.
 
 Submit to condor.
 
-    submitCondor.py --queue tomorrow --execFile condor.sh tune_UL2016_DoubleMuon_preVPF.sh 
+    submitCondor.py --queue tomorrow --execFile condor.sh tune_UL2016_DoubleMuon_preVFP.sh 
     submitCondor.py --queue tomorrow --execFile condor.sh tune_UL2017_DoubleMuon.sh 
     submitCondor.py --queue tomorrow --execFile condor.sh tune_UL2018_DoubleMuon.sh 
 
