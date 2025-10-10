@@ -169,6 +169,9 @@ Location of the *after tuning* postprocessed files.
 Submit to condor.
 
     submitCondor.py --execFile condor.sh --queue tomorrow analysisPlots_dimuon.sh
+
+Replace `dimuon` by `dimuon_afterTuning` in the corresponding data and MC `$CMSSW_BASE/src/nanoMET/samples/python/nanoTuples_*_postProcessed_mumu.py` files.
+    
     submitCondor.py --execFile condor.sh --queue tomorrow systematicsPlots_dimuon.sh
 
 Location of the plots as defined in `$CMSSW_BASE/src/nanoMET/tools/python/user.py`.
