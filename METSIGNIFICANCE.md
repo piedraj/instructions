@@ -170,7 +170,7 @@ Submit to condor.
 
     submitCondor.py --execFile condor.sh --queue tomorrow analysisPlots_dimuon.sh
 
-Replace `dimuon` by `dimuon_afterTuning` in the corresponding data and MC `$CMSSW_BASE/src/nanoMET/samples/python/nanoTuples_*_postProcessed_mumu.py` files.
+Replace `dimuon` by `dimuon_afterTuning` in the corresponding `$CMSSW_BASE/src/nanoMET/samples/python/*postProcessed_mumu.py` files.
     
     submitCondor.py --execFile condor.sh --queue tomorrow systematicsPlots_dimuon.sh
 
