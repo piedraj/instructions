@@ -98,7 +98,7 @@ Test interactively with the `WZ` sample in `postProcessing_2018_mumu_nanoAODv9.s
 
     python postProcessing_doublemu_new.py --skim dimuon --era v9 --year 2018 --ul --samples WZ #SPLIT16
 
-Submit to condor. The `--resubmitFailedJobs` can be included to resubmit jobs with nonzero exit code.
+Submit to condor. The `--resubmitFailedJobs` argument can be included to resubmit jobs with nonzero exit code.
     
     submitCondor.py --dpm --queue tomorrow --execFile condor.sh postProcessing_2016_mumu_nanoAODAPVv9_preVFP.sh
     submitCondor.py --dpm --queue tomorrow --execFile condor.sh postProcessing_2016_mumu_nanoAODv9_postVFP.sh
