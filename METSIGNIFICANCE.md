@@ -140,7 +140,7 @@ Location of the postprocessed files.
 
     cd $CMSSW_BASE/src/nanoMET/run
 
-Submit to condor. The content of the predefined cut strings can be found in `nanoMET/tools/python/cutInterpreter.py`.
+Submit to condor. The content of the predefined cut strings can be found in the [`nanoMET/tools/python/cutInterpreter.py`](https://github.com/cesarecazzaniga/nanoMET/blob/dimuon_analysis/tools/python/cutInterpreter.py) file.
 
     submitCondor.py --queue tomorrow --execFile condor.sh tune_UL2016_DoubleMuon_preVFP.sh 
     submitCondor.py --queue tomorrow --execFile condor.sh tune_UL2017_DoubleMuon.sh 
@@ -171,7 +171,7 @@ Location of the *after tuning* postprocessed files.
     cd $CMSSW_BASE/src/nanoMET/plots
     cp $CMSSW_BASE/src/nanoMET/postprocessing/tunes_dimuon.py .
 
-Submit to condor. The content of the predefined cut strings can be found in [`nanoMET/tools/python/cutInterpreter.py`](https://github.com/cesarecazzaniga/nanoMET/blob/dimuon_analysis/tools/python/cutInterpreter.py).
+Submit to condor. The content of the predefined cut strings can be found in the [`nanoMET/tools/python/cutInterpreter.py`](https://github.com/cesarecazzaniga/nanoMET/blob/dimuon_analysis/tools/python/cutInterpreter.py) file.
 
     submitCondor.py --execFile condor.sh --queue tomorrow analysisPlots_dimuon.sh
 
