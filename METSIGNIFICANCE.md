@@ -4,7 +4,7 @@ Instructions extracted from the [MET Significance studies using nanoAOD](https:/
 
 [MET Significance tuning and performance in dimuon event](https://gitlab.cern.ch/cms-jetmet/coordination/coordination/-/issues/218) GitLab open issue.
 
-# 0. Installation
+## 0. Installation
 
 Log in to the CERN LXPLUS cluster.
 
@@ -59,7 +59,7 @@ Some user specific paths are hardcoded in the nanoMET repository. Edit the `$CMS
 | `data_directory`	                | Path to the postprocessed samples       |
 | `dbDir`	                        | Path to the used samples database       |
 
-# 1. Always do
+## 1. Always do
 
 It is necessary that you provide a full AFS path to your proxy file. Information regarding proxy settings can be found [here](https://batchdocs.web.cern.ch/tutorial/exercise2e_proxy.html).
 
@@ -74,7 +74,7 @@ It is necessary that you provide a full AFS path to your proxy file. Information
     export X509_USER_PROXY=/afs/cern.ch/work/p/piedra/private/x509up
     voms-proxy-init -voms cms --valid 192:00 --vomslife 192:0
 
-# 2. Caching normalization in samples
+## 2. Caching normalization in samples
 
 This step should be performed the first time, and anytime one or more samples have been added.
 
@@ -90,7 +90,7 @@ This step should be performed the first time, and anytime one or more samples ha
     python $CMSSW_BASE/src/nanoMET/nanoAOD/python/UL18_nanoAODv9.py
     python $CMSSW_BASE/src/nanoMET/nanoAOD/python/UL18_DATA_nanoAODv9.py
 
-# 3. Postprocessing samples
+## 3. Postprocessing samples
 
     cd $CMSSW_BASE/src/nanoMET/postprocessing
 
@@ -136,7 +136,7 @@ Location of the postprocessed files.
     /eos/cms/store/group/phys_jetmet/piedra/MET_studies/MET_significance/OUTPUT_DIR/2017_UL_v9/dimuon
     /eos/cms/store/group/phys_jetmet/piedra/MET_studies/MET_significance/OUTPUT_DIR/2018_UL_v9/dimuon
 
-# 4. Tuning the MET Significance
+## 4. Tuning the MET Significance
 
     cd $CMSSW_BASE/src/nanoMET/run
 
@@ -150,7 +150,7 @@ The tuning parameters for data and MC should appear in the following folder.
 
     $CMSSW_BASE/src/nanoMET/run/results
 
-# 5. Recomputing the MET Significance
+## 5. Recomputing the MET Significance
 
     cd $CMSSW_BASE/src/nanoMET/postprocessing
 
@@ -166,7 +166,7 @@ Location of the *after tuning* postprocessed files.
     /eos/cms/store/group/phys_jetmet/piedra/MET_studies/MET_significance/OUTPUT_DIR/2017_UL_v9/dimuon_afterTuning
     /eos/cms/store/group/phys_jetmet/piedra/MET_studies/MET_significance/OUTPUT_DIR/2018_UL_v9/dimuon_afterTuning
 
-# 6. Draw analysis and systematics plots
+## 6. Draw analysis and systematics plots
 
     cd $CMSSW_BASE/src/nanoMET/plots
     cp $CMSSW_BASE/src/nanoMET/postprocessing/tunes_dimuon.py .
@@ -184,7 +184,7 @@ Location of the plots as defined in `$CMSSW_BASE/src/nanoMET/tools/python/user.p
     /afs/cern.ch/user/p/piedra/MET_studies/MET_significance/PLOT_DIR/analysisPlots
     /afs/cern.ch/user/p/piedra/MET_studies/MET_significance/PLOT_DIR/systematicsPlots
 
-# 7. Share on the web
+## 7. Share on the web
 
 Create a `met-studies` directory in your EOS `www` location, and copy there the plots.
 
