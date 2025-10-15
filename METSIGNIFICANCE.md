@@ -158,12 +158,14 @@ The tuning parameters for data and MC should appear in the following folder.
 Copy the data and MC tuning parameters obtained in the previous step in the `tunes_dimuon.py` file. Once the parameters have been copied you can submit the *after tuning* jobs to condor.
 
     submitCondor.py --dpm --queue tomorrow --execFile condor.sh postProcessing_2016_mumu_nanoAODAPVv9_preVFP_after_tuning.sh
+    submitCondor.py --dpm --queue tomorrow --execFile condor.sh postProcessing_2016_mumu_nanoAODv9_postVFP_after_tuning.sh
     submitCondor.py --dpm --queue tomorrow --execFile condor.sh postProcessing_2017_mumu_nanoAODv9_after_tuning.sh
     submitCondor.py --dpm --queue tomorrow --execFile condor.sh postProcessing_2018_mumu_nanoAODv9_after_tuning.sh
 
 Location of the *after tuning* postprocessed files.
 
     /eos/cms/store/group/phys_jetmet/piedra/MET_studies/MET_significance/OUTPUT_DIR/2016_UL_preVFP_v9/dimuon_afterTuning
+    /eos/cms/store/group/phys_jetmet/piedra/MET_studies/MET_significance/OUTPUT_DIR/2016_UL_postVFP_v9/dimuon_afterTuning
     /eos/cms/store/group/phys_jetmet/piedra/MET_studies/MET_significance/OUTPUT_DIR/2017_UL_v9/dimuon_afterTuning
     /eos/cms/store/group/phys_jetmet/piedra/MET_studies/MET_significance/OUTPUT_DIR/2018_UL_v9/dimuon_afterTuning
 
