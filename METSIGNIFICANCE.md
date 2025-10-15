@@ -142,7 +142,8 @@ Location of the postprocessed files.
 
 Submit to condor. The content of the predefined cut strings can be found in the [`nanoMET/tools/python/cutInterpreter.py`](https://github.com/cesarecazzaniga/nanoMET/blob/dimuon_analysis/tools/python/cutInterpreter.py) file.
 
-    submitCondor.py --queue tomorrow --execFile condor.sh tune_UL2016_DoubleMuon_preVFP.sh 
+    submitCondor.py --queue tomorrow --execFile condor.sh tune_UL2016_DoubleMuon_preVFP.sh
+    submitCondor.py --queue tomorrow --execFile condor.sh tune_UL2016_DoubleMuon_postVFP.sh 
     submitCondor.py --queue tomorrow --execFile condor.sh tune_UL2017_DoubleMuon.sh 
     submitCondor.py --queue tomorrow --execFile condor.sh tune_UL2018_DoubleMuon.sh 
 
