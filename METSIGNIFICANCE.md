@@ -178,8 +178,8 @@ Replace `dimuon` by `dimuon_afterTuning` in the corresponding `$CMSSW_BASE/src/n
 
 Submit to condor. The content of the predefined cut strings can be found in the [`nanoMET/tools/python/cutInterpreter.py`](https://github.com/cesarecazzaniga/nanoMET/blob/dimuon_analysis/tools/python/cutInterpreter.py) file.
 
-    submitCondor.py --execFile condor.sh --queue tomorrow analysisPlots_dimuon.sh
-    submitCondor.py --execFile condor.sh --queue tomorrow systematicsPlots_dimuon.sh
+    submitCondor.py --execFile condor.sh --queue tomorrow analysisPlots_dimuon_zeroGoodJetVeto.sh
+    submitCondor.py --execFile condor.sh --queue tomorrow systematicsPlots_dimuon_zeroGoodJetVeto.sh
 
 Location of the plots as defined in `$CMSSW_BASE/src/nanoMET/tools/python/user.py`.
 
