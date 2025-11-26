@@ -6,7 +6,7 @@ Original instructions extracted from the [MET Significance studies using nanoAOD
 
 ## 0. Installation
 
-Log in to the CERN LXPLUS cluster.
+Log in to the CERN LXPLUS cluster. Do it from a Windows PowerShell if your operating system is Windows.
 
     ssh -Y -l <user> lxplus.cern.ch -o ServerAliveInterval=240
 
