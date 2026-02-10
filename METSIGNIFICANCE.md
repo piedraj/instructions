@@ -192,6 +192,7 @@ Only the first time initialize a CMSSW release.
 
     ssh -Y -l piedra lxplus.cern.ch -o ServerAliveInterval=240
     bash -l
+    
     cd /afs/cern.ch/work/p/piedra/public/CMSSW_projects
     cmsrel CMSSW_15_0_15
 
@@ -199,6 +200,7 @@ Always do.
 
     ssh -Y -l piedra lxplus.cern.ch -o ServerAliveInterval=240
     bash -l
+    
     cd /afs/cern.ch/work/p/piedra/public/CMSSW_projects/CMSSW_15_0_15/src
     cmsenv
 
