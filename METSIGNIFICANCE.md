@@ -186,7 +186,39 @@ Location of the plots as defined in `$CMSSW_BASE/src/nanoMET/tools/python/user.p
     /afs/cern.ch/user/p/piedra/MET_studies/MET_significance/PLOT_DIR/analysisPlots
     /afs/cern.ch/user/p/piedra/MET_studies/MET_significance/PLOT_DIR/systematicsPlots
 
-## 7. Share on the web
+## 7. Draw the ROC curves
+
+Only the first time initialize a CMSSW release.
+
+    ssh -Y -l piedra lxplus.cern.ch -o ServerAliveInterval=240
+    bash -l
+    cd /afs/cern.ch/work/p/piedra/public/CMSSW_projects
+    cmsrel CMSSW_15_0_15
+
+Always do.
+
+    ssh -Y -l piedra lxplus.cern.ch -o ServerAliveInterval=240
+    bash -l
+    cd /afs/cern.ch/work/p/piedra/public/CMSSW_projects/CMSSW_15_0_15/src
+    cmsenv
+
+    cd /afs/cern.ch/work/p/piedra/public/CMSSW_projects/CMSSW_10_2_18/src/nanoMET/plots/
+ 
+Create a `.json` file with the ROCs information from your input histograms.
+
+    python3 create_rocs_json.py
+ 
+Run `plot_rocs_met_sig.py` to compare different processes such as top or diboson, or `plot_rocs_met_vs_met_sig.py` to compare PF MET and MET Significance with the `.json` as input.
+
+    python3 plot_rocs_met_sig.py
+    python3 plot_rocs_met_vs_met_sig.py
+ 
+Additionally `save_histos_in_root_files.py` reads the pickle file and saves in `.root` files the histograms with systematic variations.
+
+    python3 save_histos_in_root_files.py
+    
+
+## 8. Share on the web
 
 Create a `met-studies` directory in your EOS `www` location, and copy there the plots.
 
