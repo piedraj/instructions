@@ -186,7 +186,16 @@ Location of the plots as defined in `$CMSSW_BASE/src/nanoMET/tools/python/user.p
     /afs/cern.ch/user/p/piedra/MET_studies/MET_significance/PLOT_DIR/analysisPlots
     /afs/cern.ch/user/p/piedra/MET_studies/MET_significance/PLOT_DIR/systematicsPlots
 
-## 7. Draw the ROC curves
+
+## 7. Input for Alexis' code
+
+The script `save_histos_in_root_files.py` reads `results.pickle` and saves the histograms with systematic variations in `.root` files.
+
+    cd $CMSSW_BASE/src/nanoMET/plots
+    python save_histos_in_root_files.py
+
+
+## 8. Draw the ROC curves
 
 Only the first time initialize a CMSSW release.
 
@@ -214,13 +223,9 @@ Run `plot_rocs_met_sig.py` to compare different processes such as top or diboson
 
     python3 plot_rocs_met_sig.py
     python3 plot_rocs_met_vs_met_sig.py
- 
-Additionally `save_histos_in_root_files.py` reads the `results.pickle` file and saves in `.root` files the histograms with systematic variations.
 
-    python3 save_histos_in_root_files.py
     
-
-## 8. Share on the web
+## 9. Share on the web
 
 Create a `met-studies` directory in your EOS `www` location, and copy there the plots.
 
