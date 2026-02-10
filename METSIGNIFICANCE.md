@@ -215,7 +215,7 @@ Run `plot_rocs_met_sig.py` to compare different processes such as top or diboson
     python3 plot_rocs_met_sig.py
     python3 plot_rocs_met_vs_met_sig.py
  
-Additionally `save_histos_in_root_files.py` reads the pickle file and saves in `.root` files the histograms with systematic variations.
+Additionally `save_histos_in_root_files.py` reads the `results.pickle` file and saves in `.root` files the histograms with systematic variations.
 
     python3 save_histos_in_root_files.py
     
