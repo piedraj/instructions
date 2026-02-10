@@ -210,7 +210,7 @@ Create a `.json` file with the ROCs information from your input histograms.
 
     python3 create_rocs_json.py
  
-Run `plot_rocs_met_sig.py` to compare different processes such as top or diboson, or `plot_rocs_met_vs_met_sig.py` to compare PF MET and MET Significance with the `.json` as input.
+Run `plot_rocs_met_sig.py` to compare different processes such as top or diboson, or `plot_rocs_met_vs_met_sig.py` to compare PF MET and MET Significance, with `rocs.json` as input.
 
     python3 plot_rocs_met_sig.py
     python3 plot_rocs_met_vs_met_sig.py
