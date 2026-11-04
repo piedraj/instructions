@@ -9,6 +9,7 @@ Log in to the CERN LXPLUS cluster. Do it from a Windows PowerShell if your opera
     /usr/bin/tcsh
     
     cd work
+    
     git clone ssh://git@gitlab.cern.ch:7999/pyrat-crew/pyRAT.git
     cd pyRAT
     python3 executables/main/first_time_setup.py
