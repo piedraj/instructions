@@ -7,10 +7,14 @@ Log in to the CERN LXPLUS cluster. Do it from a Windows PowerShell if your opera
     ssh -Y -l piedra lxplus.cern.ch -o ServerAliveInterval=240
     echo $SHELL
     /usr/bin/tcsh
-    
     cd work
+
+Clone the [pyRAT repository](https://gitlab.cern.ch/pyrat-crew/pyRAT).
     
     git clone ssh://git@gitlab.cern.ch:7999/pyrat-crew/pyRAT.git
+
+[Get started](https://pyrat.docs.cern.ch/getting_started/).
+    
     cd pyRAT
     
     python3 executables/main/first_time_setup.py
@@ -32,10 +36,7 @@ Log in to the CERN LXPLUS cluster. Do it from a Windows PowerShell if your opera
     }
     INFO:: pyRAT setup completed. Use `source setup_environment.sh` to initialize the environment.
 
-* pyRAT repository: https://gitlab.cern.ch/pyrat-crew/pyRAT
-* Setup instructions: https://pyrat.docs.cern.ch/getting_started/
+    source setup_environment.sh
+    /cvmfs/cms.cern.ch/rucio/setup.csh: No such file or directory.
 
-
-
-
-* Add the MET Significance repository within pyRAT: https://gitlab.cern.ch/pyrat-crew/met_significan
+Add the [MET Significance repository](https://gitlab.cern.ch/pyrat-crew/met_significan) within pyRAT.
