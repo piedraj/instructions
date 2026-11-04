@@ -5,8 +5,10 @@
 Log in to the CERN LXPLUS cluster. Do it from a Windows PowerShell if your operating system is Windows.
 
     ssh -Y -l piedra lxplus.cern.ch -o ServerAliveInterval=240
+
     echo $SHELL
     /usr/bin/tcsh
+
     cd work
 
 Clone the pyRAT (Python ROOT Analysis Toolkit) [repository](https://gitlab.cern.ch/pyrat-crew/pyRAT) from GitLab.
