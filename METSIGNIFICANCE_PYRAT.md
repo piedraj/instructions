@@ -39,4 +39,4 @@ Clone the pyRAT (Python ROOT Analysis Toolkit) [repository](https://gitlab.cern.
     source setup_environment.sh
     /cvmfs/cms.cern.ch/rucio/setup.csh: No such file or directory.
 
-Add the [MET Significance repository](https://gitlab.cern.ch/pyrat-crew/met_significan) within pyRAT.
+Add the [MET Significance repository](https://gitlab.cern.ch/pyrat-crew/met_significance) within pyRAT.
