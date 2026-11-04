@@ -15,7 +15,7 @@ Clone the pyRAT (Python ROOT Analysis Toolkit) [repository](https://gitlab.cern.
     
     git clone ssh://git@gitlab.cern.ch:7999/pyrat-crew/pyRAT.git
 
-[Get started](https://pyrat.docs.cern.ch/getting_started/).
+[Get started](https://pyrat.docs.cern.ch/getting_started/) running the setup script to install all required dependencies.
     
     cd pyRAT
     
