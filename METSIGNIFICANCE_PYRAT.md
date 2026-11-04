@@ -1,4 +1,4 @@
-# MET Significance with pRAT
+# MET Significance with pyRAT
 
 ## 0. Installation
 
