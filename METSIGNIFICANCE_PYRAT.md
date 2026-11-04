@@ -9,7 +9,7 @@ Log in to the CERN LXPLUS cluster. Do it from a Windows PowerShell if your opera
     /usr/bin/tcsh
     cd work
 
-Clone the [pyRAT repository](https://gitlab.cern.ch/pyrat-crew/pyRAT).
+Clone the pyRAT (Python ROOT Analysis Toolkit )[repository](https://gitlab.cern.ch/pyrat-crew/pyRAT).
     
     git clone ssh://git@gitlab.cern.ch:7999/pyrat-crew/pyRAT.git
 
