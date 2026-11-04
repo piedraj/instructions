@@ -1,5 +1,7 @@
 # MET Significance within pyRAT
 
+The _old_ MET Significance instructions can be found [here](https://github.com/piedraj/instructions/blob/master/METSIGNIFICANCE.md).
+
 ## 0. Installation
 
 Log in to the CERN LXPLUS cluster. Do it from a Windows PowerShell if your operating system is Windows.
