@@ -43,4 +43,6 @@ After installation, source the environment script to activate the setup.
     source setup_environment.sh
     /cvmfs/cms.cern.ch/rucio/setup.csh: No such file or directory.
 
-Add the [MET Significance repository](https://gitlab.cern.ch/pyrat-crew/met_significance) within pyRAT.
+## 1. Add the MET Significance workflow
+
+Follow [these instructions](https://gitlab.cern.ch/pyrat-crew/met_significance) to run the workflow.
