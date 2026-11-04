@@ -38,6 +38,8 @@ Clone the pyRAT (Python ROOT Analysis Toolkit) [repository](https://gitlab.cern.
     }
     INFO:: pyRAT setup completed. Use `source setup_environment.sh` to initialize the environment.
 
+After installation, source the environment script to activate the setup.
+
     source setup_environment.sh
     /cvmfs/cms.cern.ch/rucio/setup.csh: No such file or directory.
 
