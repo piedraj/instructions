@@ -12,8 +12,8 @@ Log in to the CERN LXPLUS cluster. Do it from a Windows PowerShell if your opera
     
     git clone ssh://git@gitlab.cern.ch:7999/pyrat-crew/pyRAT.git
     cd pyRAT
+    
     python3 executables/main/first_time_setup.py
-
     INFO:: Starting first time setup for pyRAT
     Platform: el9. isCI: None
       --> settings/user_configs/piedra.json does not exist. Creating default config.
