@@ -20,7 +20,7 @@ Clone the pyRAT (Python ROOT Analysis Toolkit) [repository](https://gitlab.cern.
 
     cd pyRAT
 
-[Get started](https://pyrat.docs.cern.ch/getting_started/). Create a user-specific configuration file (`settings/user_configs/piedra.json`)
+[Get started](https://pyrat.docs.cern.ch/getting_started/). Create a user-specific configuration file `settings/user_configs/piedra.json`.
 
     {
         "username": "piedra",
