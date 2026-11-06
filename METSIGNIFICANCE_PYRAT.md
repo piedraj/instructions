@@ -34,7 +34,7 @@ Follow [these instructions](https://gitlab.cern.ch/pyrat-crew/met_significance) 
 
     git clone ssh://git@gitlab.cern.ch:7999/pyrat-crew/met_significance
 
-Now activate the pyRAT repository environment.
+Activate the pyRAT repository environment.
 
     source setup_environment.sh
 
