@@ -8,10 +8,7 @@ Log in to the CERN LXPLUS cluster. Do it from a Windows PowerShell if your opera
 
     ssh -Y -l piedra lxplus.cern.ch -o ServerAliveInterval=240
 
-    bash -l
-
-    echo $SHELL
-    /usr/bin/tcsh
+    /bin/bash
 
     cd work
 
