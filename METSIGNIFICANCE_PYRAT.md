@@ -45,7 +45,7 @@ After installation, source the environment script to activate the setup.
 
 ## 1. Add the MET Significance workflow
 
-Follow [these instructions](https://gitlab.cern.ch/pyrat-crew/met_significance) to run the workflow. Start by cloning the `met_significance` code from GitLab.
+Follow [these instructions](https://gitlab.cern.ch/pyrat-crew/met_significance). Start by cloning the `met_significance` code from GitLab.
 
     git clone ssh://git@gitlab.cern.ch:7999/pyrat-crew/met_significance
 
