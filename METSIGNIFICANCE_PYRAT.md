@@ -43,7 +43,7 @@ After installation, source the environment script to activate the setup.
 
     source setup_environment.sh
 
-Add the MET Significance workflow
+**Add the MET Significance workflow.**
 
 Follow [these instructions](https://gitlab.cern.ch/pyrat-crew/met_significance). Start by cloning the `met_significance` code from GitLab.
 
