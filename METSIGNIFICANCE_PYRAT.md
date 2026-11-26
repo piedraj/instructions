@@ -43,14 +43,17 @@ After installation, source the environment script to activate the setup.
 
     source setup_environment.sh
 
-## 1. Add the MET Significance workflow
+Add the MET Significance workflow
 
 Follow [these instructions](https://gitlab.cern.ch/pyrat-crew/met_significance). Start by cloning the `met_significance` code from GitLab.
 
     git clone ssh://git@gitlab.cern.ch:7999/pyrat-crew/met_significance
 
-Activate the pyRAT repository environment.
+## 1. Always do
 
+    ssh -Y -l piedra lxplus.cern.ch -o ServerAliveInterval=240
+    /bin/bash
+    cd work/pyRAT
     source setup_environment.sh
 
 The steer file follows the usual pyRAT pattern and may be configured to print, run, submit, recover, or plot jobs.
